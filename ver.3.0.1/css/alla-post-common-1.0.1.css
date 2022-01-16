@@ -1,0 +1,516 @@
+@charset "UTF-8";
+
+/* -------------------------------------------- */
+/* 제  목 : alla-post-common-1.0.1.css        */
+/* 작성일 : 2020.06.15                          */
+/* 작성자 : 김현수                              */
+/* -------------------------------------------- */
+
+/* 전체 영역 : 초기값 셋팅 */
+.allaGuideWrap,
+.allaThumbnailWrap,
+.allaTitleWrap,
+.allaBasicWrap,
+.allaCheckWrap,
+.allaAnswerTableWrap {
+    width: 100%;
+    max-width: 820px;
+    font-family: 'Noto Sans KR';
+    font-size: 18px;
+    color: #333;
+    line-height: 40px;
+    margin: 0 auto 80px auto;
+}
+.allaBasicPlusWrap {
+    width: 100%;
+    max-width: 820px;
+    font-family: 'Noto Sans KR';
+    font-size: 18px;
+    color: #333;
+    line-height: 40px;
+    margin: 0 auto 30px auto;
+}
+/* -------------------------------------------- */
+/* .가이드 영역 */
+.allaGuideWrap {
+    text-align: center;
+            margin-top: 80px;
+}
+
+.allaGuideWrap img {
+    width: 100%;
+    max-width: 820px;
+}
+/* -------------------------------------------- */
+/* 썸네일 영역 */
+.allaThumbnailWrap {
+    text-align: center;
+}
+
+.allaThumbnailWrap img {
+    width: 100%;
+    max-width: 820px;
+}
+/* -------------------------------------------- */
+/* 타이틀 영역 */
+/* 타이틀 영역 - 테이블 */
+.allaTitleWrap table {
+    border-collapse: collapse;
+    border: 3px solid black;
+    width: 100%;
+    max-width: 820px;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.allaTitleWrap table tr td{
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 10px 0;
+    line-height: 1.6em;
+}
+
+/* 타이틀 영역 - 정렬 */
+.allaTitleWrap table tr:nth-of-type(1) td,
+.allaTitleWrap table tr:nth-of-type(2) td,
+.allaTitleWrap table tr:nth-of-type(3) td:nth-of-type(1),
+.allaTitleWrap table tr:nth-of-type(4) td:nth-of-type(1),
+.allaTitleWrap table tr:nth-of-type(5) td:nth-of-type(1),
+.allaTitleWrap table tr:nth-of-type(6) td:nth-of-type(1),
+.allaTitleWrap table tr:nth-of-type(7) td:nth-of-type(1) {
+    text-align: center;
+}
+.allaTitleWrap table tr:nth-of-type(3) td:nth-of-type(1),
+.allaTitleWrap table tr:nth-of-type(4) td:nth-of-type(1),
+.allaTitleWrap table tr:nth-of-type(5) td:nth-of-type(1),
+.allaTitleWrap table tr:nth-of-type(6) td:nth-of-type(1),
+.allaTitleWrap table tr:nth-of-type(7) td:nth-of-type(1) {
+    vertical-align: top;
+    border-right: 1px solid rgba(0, 0, 0, 0);
+}
+.allaTitleWrap table tr td:nth-of-type(2) {
+    text-align: left;
+    border-right: 3px solid black;
+}
+/* 타이틀 영역 - 주제목 폰트크기 */
+.allaTitleWrap table tr:nth-of-type(2) td {
+    font-size: 36px;
+    font-weight: bold;
+}
+/* 웹앱제작 - 방송대 컴퓨터과학과 폰트크기 */
+.allaTitleWrap table tr:nth-of-type(7) td:nth-of-type(2) span {
+    font-size: 12px;
+    margin-left: 3px;
+}
+/* -------------------------------------------- */
+/* 질문 영역 */
+/* 묶음 문제 번호 */
+    .allaBasicPlusWrap .allaQuestionPlusWrap span.allaQuestionNumber {
+        font-size: 32px;
+        font-weight: bold;
+        margin-right: 10px;
+        color: #0078d6;
+    }
+/* 묶음 문제 내용 */
+    .allaBasicPlusWrap .allaQuestionPlusWrap {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+/* 메인 문제 번호 */
+    .allaBasicWrap .allaQuestionWrap span.allaQuestionNumber {
+        font-size: 32px;
+        font-weight: bold;
+        margin-right: 10px;
+        color: #0078d6;
+    }
+/* 메인 문제 내용 */
+    .allaBasicWrap .allaQuestionWrap {
+        margin-bottom: 10px;
+    }
+
+/* 보기문 영역 */
+/* 보기문 텍스트 버전 */
+    .allaExampleWrapTxt {
+        padding: 10px 20px 10px 20px;
+        margin-bottom: 10px;
+        border: 1px solid #333;
+    }
+/* 보기문 리스트 버전 */
+    .allaExampleWrapLst {
+        padding: 10px 20px 10px 20px;
+        margin-bottom: 10px;
+        border: 1px solid #333;
+        box-sizing: border-box;
+    }
+/* 보기문 이미지 버전 */
+    .allaExampleWrapImg {
+        padding: 10px 20px 10px 20px;
+        margin-bottom: 10px;
+        border: none;
+        text-align: center;
+    }
+    .allaExampleWrapImg img{
+        width: 100%;
+    }
+
+/* 객관식 영역 */
+/* 행 */
+    .allaAnswerWrap .allaAnswerLine {
+        box-sizing: border-box;
+        width: 100%;
+        /* margin-bottom: 5px; */
+        overflow: hidden;
+    }
+/* 라디오 숨김 */
+    .allaAnswerWrap form div input[type="radio"] {
+        display: none;
+    }
+/* 라디오 이미지 */
+    .allaAnswerWrap .allaAnswerLine .allaAnswerRadioImg {
+        float: left;
+        box-sizing: border-box;
+        padding-left: 10px;
+        width: 30px;
+    }
+    .allaAnswerWrap .allaAnswerLine .allaAnswerRadioImg img {
+        width: 20px;
+        cursor: pointer;
+        margin-top: 13px;
+    }
+/* 객관식 내용 */
+    .allaAnswerWrap .allaAnswerLine .allaAnswerContents {
+        float: left;
+        box-sizing: border-box;
+        padding: 3px 0 5px 3px;
+        margin-left: 10px;
+        width: 85%;
+        min-width: 200px;
+    }
+    .allaAnswerWrap .allaAnswerLine .allaAnswerContents label {
+        cursor: pointer;
+                    margin-top: 5px;
+                    margin-bottom: 0.3rem;
+        /* vertical-align: middle; */
+    }
+    .allaAnswerWrap .allaAnswerLine .allaAnswerContents label img {
+        cursor: pointer;
+        width: 70%;
+    }
+
+/* 객관식 내용 : 모름 */
+    .allaAnswerWrap .allaAnswerLine:nth-of-type(5) .allaAnswerContents {
+        color: #ccc;
+    }
+
+/* 객관식 내용 : 문제 출처 label */
+    .allaAnswerWrap .allaAnswerLine:nth-of-type(5) .allaAnswerContents div {
+        margin-right: 10px;
+        float: right;
+        font-size: 14px;
+        color: #999;
+                    display: none;
+    }
+
+/* 메인 문제 채점 영역, 전체 질문 채점 영역 */
+.allaCheckButton,
+.allaCheckWrap {
+    box-sizing: border-box;
+    padding-right: 20px;
+    text-align: right;
+}
+.allaCheckButton button {
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    background-color: #0078d6;
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: none;
+}
+.allaCheckWrap label {
+    font-size: 14px;
+    margin-right: 10px;
+}
+.allaCheckWrap button {
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    background-color: #0078d6;
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.allaCheckWrap button:nth-of-type(2) {
+    color: #555;
+    border: 2px solid #ddd;
+    background-color: #fff;
+}
+
+/* 정답 테이블 영역 */
+/* 테이블 전체 */
+    .allaAnswerTableWrap table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #bbbbbb;
+    }
+/* 테이블 <th> 첫째줄 */
+    .allaAnswerTableWrap table tr:first-child th {
+        font-weight: bold;
+        border: 1px solid #cccccc;
+        border-bottom: 3px solid #cccccc;
+        background-color: #ffffff;
+        padding: 5px 0;
+    }
+
+/* 테이블 <th> */
+    .allaAnswerTableWrap table tr th,
+    .allaAnswerTableWrap table tr td {
+        border: 1px solid #cccccc;
+        padding: 10px 0;
+    }
+
+/* 테이블 <td> */
+    .allaAnswerTableWrap table tr td {
+        text-align: center;
+        border: 1px solid #cccccc;
+    }
+
+/* 테이블 <td> 문제번호 */
+    .allaAnswerTableWrap table tr td:first-of-type {
+        color: #0078d6;
+        font-weight: bold;
+    }
+    /* 추가 0609 */
+    .allaAnswerTableWrap table:nth-of-type(1) tr td:nth-of-type(1),
+    .allaAnswerTableWrap table:nth-of-type(1) tr td:nth-of-type(3),
+    .allaAnswerTableWrap table:nth-of-type(1) tr td:nth-of-type(5) {
+        color: #0078d6;
+        font-weight: bold;
+    }
+
+/* 테이블 <td> 홀수 */
+    .allaAnswerTableWrap table tr:nth-child(even) td {
+        background-color: #eeeeee;
+    }
+
+/* 테이블 <td> 짝수 */
+    .allaAnswerTableWrap table tr:nth-child(odd) td {
+        background-color: #ffffff;
+    }
+
+/* 채점결과 이미지 <td> */
+    .allaAnswerTableWrap table tr td:nth-child(4) {
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+/* 채점결과 이미지 <img> */
+    .allaAnswerTableWrap table tr td:nth-child(4) img {
+        width: 26px;
+        margin: 0 auto;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+/* 바로가기 이미지 <td> */
+    .allaAnswerTableWrap table tr td:last-child {
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+/* 바로가기 이미지 <img> */
+    .allaAnswerTableWrap table tr td:last-child img {
+        width: 26px;
+        cursor: pointer;
+        margin: 0 auto;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+/* 기타 */
+/* clearfix */
+    .clearfix{*zoom:1;}
+    .clearfix:before, .clearfix:after {display: block; content: '';line-height: 0;}
+    .clearfix:after {clear: both;}
+
+/* 폰트 밑줄 */
+    .iunder{text-decoration: underline;}
+
+/* 폰트 굵게 */
+    .ibold{font-weight: bold;}
+
+/* 폰트 밑줄+굵게 */
+    .iub{text-decoration: underline;font-weight: bold;}
+
+/* img .math 1줄 */
+    img.imgMath1{
+        vertical-align: middle;
+        height: 34px;
+        margin-bottom: 2px;
+    }
+
+/* img .math 2줄 */
+    img.imgMath2{
+        vertical-align: middle;
+        height: 73px;
+        margin-top: 2px;
+    }
+/* index page 전공 과목 영역 0615 추가 */
+/* 전공 전체 영역 */
+.allaObjactWrap {
+    margin: 0 auto 30px auto;
+    width: 100%;
+    max-width: 820px;
+}
+
+/* 전공 썸네일 영역 */
+.allaObjactWrap .allaObjactThumbWrap {
+    width: 100%;
+    height: 495px;
+    margin: 0 0 50px 0;
+    background-color: #0078d6;
+}
+
+/* 전공 타이틀 영역 */
+.allaObjactWrap .allaObjactTitleWrap {
+    width: 100%;
+    padding: 10px 10px 10px 5px;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0078d6;
+}
+
+/* 학년 영역 */
+.allaObjactWrap .alla1GradeWrap,
+.allaObjactWrap .alla2GradeWrap,
+.allaObjactWrap .alla3GradeWrap,
+.allaObjactWrap .alla4GradeWrap {
+    float: left;
+    width: 24%;
+            min-width: 190px;
+    margin: 0 4px 30px 4px;
+}
+
+/* 테이블 전체 */
+.allaObjactWrap .alla1GradeWrap table,
+.allaObjactWrap .alla2GradeWrap table,
+.allaObjactWrap .alla3GradeWrap table,
+.allaObjactWrap .alla4GradeWrap table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #bbbbbb;
+}
+
+    /* 테이블 <th>, <td> */
+.allaObjactWrap .alla1GradeWrap table tr th,
+.allaObjactWrap .alla2GradeWrap table tr th,
+.allaObjactWrap .alla3GradeWrap table tr th,
+.allaObjactWrap .alla4GradeWrap table tr th,
+.allaObjactWrap .alla1GradeWrap table tr td,
+.allaObjactWrap .alla2GradeWrap table tr td,
+.allaObjactWrap .alla3GradeWrap table tr td,
+.allaObjactWrap .alla4GradeWrap table tr td {
+    border: 1px solid #cccccc;
+    padding: 10px 10px;
+    text-align: left;
+}
+
+    /* 테이블 <th> 첫째줄 */
+.allaObjactWrap .alla1GradeWrap table tr:nth-of-type(1) th,
+.allaObjactWrap .alla2GradeWrap table tr:nth-of-type(1) th,
+.allaObjactWrap .alla3GradeWrap table tr:nth-of-type(1) th,
+.allaObjactWrap .alla4GradeWrap table tr:nth-of-type(1) th {
+    font-weight: bold;
+    border: 1px solid #cccccc;
+    border-bottom: 3px solid #cccccc;
+    background-color: #ffffff;
+    padding: 5px 10px;
+}
+
+    /* 테이블 <td> */
+.allaObjactWrap .alla1GradeWrap table tr td,
+.allaObjactWrap .alla2GradeWrap table tr td,
+.allaObjactWrap .alla3GradeWrap table tr td,
+.allaObjactWrap .alla4GradeWrap table tr td {
+    text-align: left;
+            height: 40px;
+    padding: 0 10px;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+}
+
+    /* 테이블 액션 <td> */
+.allaObjactWrap .alla1GradeWrap table tr td a:link,
+.allaObjactWrap .alla2GradeWrap table tr td a:link,
+.allaObjactWrap .alla3GradeWrap table tr td a:link,
+.allaObjactWrap .alla4GradeWrap table tr td a:link,
+.allaObjactWrap .alla1GradeWrap table tr td a:visited,
+.allaObjactWrap .alla2GradeWrap table tr td a:visited,
+.allaObjactWrap .alla3GradeWrap table tr td a:visited,
+.allaObjactWrap .alla4GradeWrap table tr td a:visited,
+.allaObjactWrap .alla1GradeWrap table tr td a:active,
+.allaObjactWrap .alla2GradeWrap table tr td a:active,
+.allaObjactWrap .alla3GradeWrap table tr td a:active,
+.allaObjactWrap .alla4GradeWrap table tr td a:active {
+    color: #222;
+    text-decoration: none;
+}
+
+.allaObjactWrap .alla1GradeWrap table tr td a:hover,
+.allaObjactWrap .alla2GradeWrap table tr td a:hover,
+.allaObjactWrap .alla3GradeWrap table tr td a:hover,
+.allaObjactWrap .alla4GradeWrap table tr td a:hover {
+    color: #0078d6;
+}
+
+    /* 테이블 <td> 홀수 */
+.allaObjactWrap .alla1GradeWrap table tr:nth-of-type(even) td,
+.allaObjactWrap .alla2GradeWrap table tr:nth-of-type(even) td,
+.allaObjactWrap .alla3GradeWrap table tr:nth-of-type(even) td,
+.allaObjactWrap .alla4GradeWrap table tr:nth-of-type(even) td {
+    background-color: #eeeeee;
+}
+
+    /* 테이블 <td> 짝수 */
+.allaObjactWrap .alla1GradeWrap table tr:nth-of-type(odd) td,
+.allaObjactWrap .alla2GradeWrap table tr:nth-of-type(odd) td,
+.allaObjactWrap .alla3GradeWrap table tr:nth-of-type(odd) td,
+.allaObjactWrap .alla4GradeWrap table tr:nth-of-type(odd) td {
+    background-color: #ffffff;
+}
+
+    /* etc years qeustion shortcut */
+.allaOutExamWrap{
+    width: 100%;
+    max-width: 820px;
+    margin: 0 auto 80px auto;
+    box-sizing: border-box;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.allaOutExamWrap a{
+    font-size: 36px;
+            color: #343a40;
+    display: inline-block;
+    padding: 60px 0;
+}
+
+    /* allaNoticeFooterWrap */
+    .allaNoticeFooterWrap {
+    }
+
+
+    .allaNoticeFooterWrap div div:nth-of-type(4) div a img,
+    .allaNoticeFooterWrap div div:nth-of-type(5) div a img {
+        opacity: 0.2;
+    }
+
+/* -------------------------------------------- */
+/* 종  료 : alla-post-common-ver1.css         */
+/* -------------------------------------------- */	
