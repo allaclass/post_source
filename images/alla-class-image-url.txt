@@ -1,0 +1,40 @@
+[AllA CLASS] Image URL
+
+ok.# answer-none.png
+https://tistory3.daumcdn.net/tistory/4700529/skin/images/answer-none.png
+
+ok.# answer-o.png
+https://tistory1.daumcdn.net/tistory/4700529/skin/images/answer-o.png
+
+ok.# answer-shortcut.png
+https://tistory3.daumcdn.net/tistory/4700529/skin/images/answer-shortcut.png
+
+ok.# answer-t.png
+https://tistory3.daumcdn.net/tistory/4700529/skin/images/answer-t.png
+
+ok.# answer-x.png
+https://tistory2.daumcdn.net/tistory/4700529/skin/images/answer-x.png
+
+ok.# check-O.png
+https://tistory1.daumcdn.net/tistory/4700529/skin/images/check-O.png
+
+# check-S.png
+https://tistory4.daumcdn.net/tistory/4700529/skin/images/check-S.png
+
+ok.# check-T.png
+https://tistory3.daumcdn.net/tistory/4700529/skin/images/check-T.png
+
+ok.# check-V.png
+https://tistory3.daumcdn.net/tistory/4700529/skin/images/check-V.png
+
+# check-X.png
+https://tistory2.daumcdn.net/tistory/4700529/skin/images/check-X.png
+
+# guide.gif
+https://tistory2.daumcdn.net/tistory/4700529/skin/images/Blog_Guide_Web.gif
+
+(삭제예정) # radio-check-off.png
+https://tistory3.daumcdn.net/tistory/4700529/skin/images/radio-check-off.png
+
+(삭제예정) # radio-check-on.png
+https://tistory1.daumcdn.net/tistory/4700529/skin/images/radio-check-on.png

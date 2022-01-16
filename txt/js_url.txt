@@ -1,0 +1,5 @@
+* alla-post-common-3.0.1.js
+  https://tistory2.daumcdn.net/tistory/5156907/skin/images/alla-post-common-3.0.1.js
+
+* alla-post-shortcut-1.0.1.js
+  https://tistory3.daumcdn.net/tistory/5156907/skin/images/alla-post-shortcut-1.0.1.js
