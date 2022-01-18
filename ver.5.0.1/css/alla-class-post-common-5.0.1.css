@@ -453,6 +453,9 @@
     /* 폰트 밑줄 */
     span.iunder{text-decoration: underline;}
 
+    /* 폰트 윗줄 */
+    span.iover{text-decoration: overline;}
+
     /* 폰트 굵게 */
     span.ibold{font-weight: bold;}
 
