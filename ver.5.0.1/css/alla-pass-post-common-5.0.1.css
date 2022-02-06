@@ -170,12 +170,12 @@
         padding-left: 28px;
         text-indent: -28px;
     }
-    /* 보기문 기교 [명령어: /한글괄호~/.한글괄호] [kor_bra: (가),(나),(다),(라)] */
+    /* 보기문 기교 [명령어: /괄호한글~/.괄호한글] [kor_bra: (가),(나),(다),(라)] */
     table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_kor_bra {
         padding-left: 35px;
         text-indent: -35px;
     }
-    /* 보기문 기교 [명령어: /자음괄호~/.자음괄호] [kor_con_bra: (ㄱ), (ㄴ), (ㄷ), (ㄹ)] */
+    /* 보기문 기교 [명령어: /괄호자음~/.괄호자음] [kor_con_bra: (ㄱ), (ㄴ), (ㄷ), (ㄹ)] */
     table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_kor_con_bra {
         padding-left: 35px;
         text-indent: -35px;
@@ -185,12 +185,12 @@
         padding-left: 20px;
         text-indent: -20px;
     }
-    /* 보기문 기교 [명령어: /영대괄호~/.영대괄호] [eng_big_bra: (A), (B), (C), (D)] */
+    /* 보기문 기교 [명령어: /괄호영대~/.괄호영대] [eng_big_bra: (A), (B), (C), (D)] */
     table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_eng_big_bra {
         padding-left: 28px;
         text-indent: -28px;
     }
-    /* 보기문 기교 [명령어: /영소괄호~/.영소괄호] [eng_small_bra: (a),(b),(c),(d)] */
+    /* 보기문 기교 [명령어: /괄호영소~/.괄호영소] [eng_small_bra: (a),(b),(c),(d)] */
     table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_eng_small_bra {
         padding-left: 28px;
         text-indent: -28px;
