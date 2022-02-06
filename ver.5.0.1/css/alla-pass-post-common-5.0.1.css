@@ -156,35 +156,55 @@
         border-radius: 15px;
         background-color: rgba(220, 220, 220, 0.7);
     }
-    /* 보기문 기교 [p: 단락] */
+    /* 보기문 기교 [명령어: /단락~/.단락] [p: 단락] */
     table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_p {
         text-indent: 18px;
     }
-    /* 보기문 기교 [bar: -] */
+    /* 보기문 기교 [명령어: /바~/.바] [bar: -] */
     table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_bar {
         padding-left: 14px;
         text-indent: -14px;
     }
-    /* 보기문 기교 [kor: 가, 나, 다, 라] */
+    /* 보기문 기교 [명령어: /한글~/.한글] [kor: 가, 나, 다, 라] */
     table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_kor {
         padding-left: 28px;
         text-indent: -28px;
     }
-    /* 보기문 기교 [eng: a, b, c, d] */
+    /* 보기문 기교 [명령어: /한글괄호~/.한글괄호] [kor_bra: (가),(나),(다),(라)] */
+    table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_kor_bra {
+        padding-left: 35px;
+        text-indent: -35px;
+    }
+    /* 보기문 기교 [명령어: /자음괄호~/.자음괄호] [kor_con_bra: (ㄱ), (ㄴ), (ㄷ), (ㄹ)] */
+    table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_kor_con_bra {
+        padding-left: 35px;
+        text-indent: -35px;
+    }
+    /* 보기문 기교 [명령어: /영소~/.영소] [eng: a, b, c, d] */
     table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_eng {
         padding-left: 20px;
         text-indent: -20px;
     }
-    /* 보기문 기교 [circle: ⓐ, ⓑ, ⓒ] */
+    /* 보기문 기교 [명령어: /영대괄호~/.영대괄호] [eng_big_bra: (A), (B), (C), (D)] */
+    table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_eng_big_bra {
+        padding-left: 28px;
+        text-indent: -28px;
+    }
+    /* 보기문 기교 [명령어: /영소괄호~/.영소괄호] [eng_small_bra: (a),(b),(c),(d)] */
+    table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_eng_small_bra {
+        padding-left: 28px;
+        text-indent: -28px;
+    }
+    /* 보기문 기교 [명령어: /서클~/.서클] [circle: ⓐ, ⓑ, ⓒ] */
     table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_circle {
         padding-left: 24px;
         text-indent: -24px;
     }
-    /* 보기문 기교 [정렬: 우측 */
+    /* 보기문 기교 [명령어: /우측~/.우측] [정렬: 우측 */
     table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleAlign_right {
         text-align: right;
     }
-    /* 보기문 기교 [정렬: 중앙 */
+    /* 보기문 기교 [명령어: /중앙~/.중앙] [정렬: 중앙] */
     table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleAlign_center {
         text-align: center;
     }
