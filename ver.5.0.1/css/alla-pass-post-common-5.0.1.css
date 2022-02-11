@@ -160,6 +160,11 @@
     table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_p {
         text-indent: 18px;
     }
+    /* 보기문 기교 [명령어: /단락~/.단락] [p: 좌들] */
+    table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_pleft {
+        padding-left: 20px;
+        text-indent: -20px;
+    }
     /* 보기문 기교 [명령어: /바~/.바] [bar: -] */
     table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_bar {
         padding-left: 14px;
