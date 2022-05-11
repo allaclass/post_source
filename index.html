@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="setCookie('question-01', '1', 10)">Setting</button><br>
+    <button onclick="deleteCookie('question-01')">Delete</button><br><br>
+    <button onclick="javascript:getBtn()">Get</button>
+    <button onclick="javascript:checkBtn()">Check</button>
+
+    <script>
+        var setCookie = function(name, value, day) {
+            var date = new Date();
+            date.setTime(date.getTime() + day * 60 * 60 * 24 * 1000);
+            console.log(name + '=' + value + ';expires=' + date.toUTCString() + ';path=/');
+            document.cookie = name + '=' + value + ';expires=' + date.toUTCString() + ';path=/';
+        };
+        // 저장 함수 (쿠키명, 쿠키값, 기간)을 파라미터로 받는다.
+        // 데이터 객체 생성
+        // 파라미터로 받은 데이(기간)을 데이터 객체에 담는다. 1/1000초 임으로 60*60*24*1000으로 1일을 만든다.
+        // 쿠키를 셋팅한다.
+
+        var getCookie = function(name) {
+            var value = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+            return value? value[2] : null;
+        };
+        // 조회 함수 (쿠키명)을 파라미터로 받는다.
+        // 해당하는 이름을 가진 쿠키를 조회한다.
+        // 조회한 쿠키를 반환한다.
+
+        var deleteCookie = function(name) {
+            var date = new Date();
+            document.cookie = name + "= " + "; expires=" + date.toUTCString() + ";path=/";
+        };
+        // 삭제 함수 (쿠키명)을 파라미터로 받는다.
+        // 데이터 객체 생성
+        // 해당하는 이름을 가진 쿠키를 현재 날짜로 수정한다.
+        // 현재날짜가 지나자마자 사라짐으로 삭제된다고 볼 수 있다.
+
+        function getBtn() {
+            // alert(getCookie("name"));
+            console.log(getCookie("question-01"));
+        };
+
+        function checkBtn() {
+            var cookieValue = getCookie("question-01");
+            
+            if (cookieValue > 0) {
+                console.log("Value True : "+cookieValue);
+            } else {
+                console.log("Value False : "+cookieValue);
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
+
+
+<!-- ------------------------------------------------------------------------------------ -->
+    <!-- 문제 : 01 -->
+    <!-- <form>
+        <table class="allaBasicTbl" id="allaBasicTbl01">
+            <tbody>
+                <tr class="allaQuestionTr">
+                    <td>
+                        <span class="allaQuestionNo">01</span>
+                    </td>
+                </tr>
+                <tr class="allaAnswerTr">
+                    <td class="allaAnswerTd">
+                        <label for="radio-01-1">
+                            <input class="allaAnswerRadio" type="radio" id="radio-01-1" name="question-01" value="1">
+                            객관
+                        </label>
+                    </td>
+                </tr>
+                <tr class="allaAnswerTr">
+                    <td class="allaAnswerTd">
+                        <label for="radio-01-2">
+                            <input class="allaAnswerRadio" type="radio" id="radio-01-2" name="question-01" value="2">
+                            객관
+                        </label>
+                    </td>
+                </tr>
+                <tr class="allaAnswerTr">
+                    <td class="allaAnswerTd">
+                        <label for="radio-01-3">
+                            <input class="allaAnswerRadio" type="radio" id="radio-01-3" name="question-01" value="3">
+                            객관
+                        </label>
+                    </td>
+                </tr>
+                <tr class="allaAnswerTr">
+                    <td class="allaAnswerTd">
+                        <label for="radio-01-4">
+                            <input class="allaAnswerRadio" type="radio" id="radio-01-4" name="question-01" value="4">
+                            객관
+                        </label>
+                    </td>
+                </tr>
+                <tr class="allaAnswerTr">
+                    <td class="allaAnswerTd">
+                        <label for="radio-01-5">
+                            <input class="allaAnswerRadio" type="radio" id="radio-01-5" name="question-01" value="5">
+                            모름
+                        </label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form> -->
+    <!-- //문제 : 01 -->
+    <!-- ------------------------------------------------------------------------------------ -->
