@@ -358,7 +358,7 @@ tr.allaCheckTr:last-of-type td button {
     height: 40px;
     cursor: pointer;
     margin-bottom: 10px;
-    display: none;
+    /* display: none; */
     border-radius: 15px;
 }
 
