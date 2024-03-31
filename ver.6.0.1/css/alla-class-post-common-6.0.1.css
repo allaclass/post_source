@@ -1,0 +1,508 @@
+@charset "UTF-8";
+
+/*
+제  목 : alla-class-post-common-5.0.2.css
+작성일 : 2023.01.19
+작성자 : 김현수
+*/
+
+/* 각 테이블 : 초기값 셋팅 */
+.marginWAuto {
+    margin: 0 auto;
+}
+
+.marginTop {
+    margin-top: 160px;
+}
+
+div.allaThumbDiv,
+/*div.allaNoticeHeaderDiv,*/
+div.allaGuideDiv,
+div.allaNoticeFooterDiv {
+    text-align: center;
+    max-width: 740px;
+    margin-bottom: 160px;
+}
+
+table.allaBasicTbl {
+    width: 100%;
+    max-width: 740px;
+    font-family: 'KoPub_Batang_Medium', 'KoPub_World_Batang_Medium', 'Noto Sans KR';
+    font-size: 1.4em;
+    color: #333;
+    line-height: 40px;
+    text-align: left;
+    margin-bottom: 160px;
+}
+
+table.allaCheckTbl {
+    width: 100%;
+    max-width: 740px;
+    font-family: 'KoPub_Batang_Medium', 'KoPub_World_Batang_Medium', 'Noto Sans KR';
+    font-size: 1.4em;
+    color: #333;
+    line-height: 40px;
+    text-align: right;
+    padding-right: 16px;
+    margin-bottom: 160px;
+}
+
+table.allaBasicTbl, table.allaBasicTbl tr, table.allaBasicTbl tr td,
+table.allaCheckTbl, table.allaCheckTbl tr, table.allaCheckTbl tr td {
+    border-spacing: 0 0;
+    /* TD 테스트용 가이드라인 */
+    /* border-color: #333;
+    border-style: solid;
+    border-spacing: 2px; */
+}
+
+/* -------------------------------------------- */
+/* 썸네일 영역 */
+    div.allaThumbDiv img {
+        /* display: none; */
+        /* width: 450px; */
+    }
+
+/* -------------------------------------------- */
+
+/* 가이드 영역 */
+div.allaGuideDiv img {
+    width: 100%;
+}
+
+/* -------------------------------------------- */
+/* 타이틀 영역 */
+/* 타이틀 영역 - 테이블 */
+table.allaTitleTbl {
+    width: 100%;
+    max-width: 740px;
+    font-family: 'KoPub_Batang_Medium', 'KoPub_World_Batang_Medium', 'Noto Sans KR';
+    font-size: 1em;
+    color: #333;
+    line-height: 40px;
+    text-align: left;
+    margin-bottom: 160px;
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+
+table.allaTitleTbl tr td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 8px 0;
+    line-height: 1.6em;
+}
+
+/* 타이틀 영역 - 정렬 */
+table.allaTitleTbl tr:nth-of-type(1) td,
+table.allaTitleTbl tr:nth-of-type(2) td,
+table.allaTitleTbl tr:nth-of-type(3) td:nth-of-type(1),
+table.allaTitleTbl tr:nth-of-type(4) td:nth-of-type(1),
+table.allaTitleTbl tr:nth-of-type(5) td:nth-of-type(1),
+table.allaTitleTbl tr:nth-of-type(6) td:nth-of-type(1),
+table.allaTitleTbl tr:nth-of-type(7) td:nth-of-type(1),
+    table.allaTitleTbl tr:nth-of-type(8) td:nth-of-type(1) {
+    text-align: center;
+}
+table.allaTitleTbl tr:nth-of-type(3) td:nth-of-type(1),
+table.allaTitleTbl tr:nth-of-type(4) td:nth-of-type(1),
+table.allaTitleTbl tr:nth-of-type(5) td:nth-of-type(1),
+table.allaTitleTbl tr:nth-of-type(6) td:nth-of-type(1),
+table.allaTitleTbl tr:nth-of-type(7) td:nth-of-type(1),
+    table.allaTitleTbl tr:nth-of-type(8) td:nth-of-type(1) {
+    vertical-align: top;
+    border-right: 1px solid rgba(0, 0, 0, 0);
+}
+table.allaTitleTbl tr td:nth-of-type(2) {
+    text-align: left;
+    border-right: 3px solid black;
+}
+/* 타이틀 영역 - 주제목 폰트크기 */
+table.allaTitleTbl tr:nth-of-type(2) td {
+    font-size: 36px;
+    font-weight: bold;
+}
+/* 웹앱제작 - 방송대 컴퓨터과학과 폰트크기 */
+table.allaTitleTbl tr:nth-of-type(7) td:nth-of-type(2) span {
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+/* -------------------------------------------- */
+/* 문제 영역 */
+/* 그룹 문제 번호 */
+table.allaBasicTbl tr.allaGroupQuestionTr span.allaQuestionNo {
+    font-size: 32px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #0078d6;
+}
+
+/* 메인 문제 번호 */
+table.allaBasicTbl tr.allaQuestionTr span.allaQuestionNo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0078d6;
+    padding-right: 10px;
+}
+
+/* 메인 문제 내용 */
+table.allaBasicTbl tr.allaQuestionTr td:last-of-type {
+    padding-bottom: 10px;
+}
+
+/* 보기문 영역 */
+    /* 추가 빈 라인 */
+table.allaBasicTbl tr.allaBlankTr {
+    height: 10px;
+    padding: 0px;
+    line-height: 0px;
+}
+/* 보기문 라인 */
+table.allaBasicTbl tr.allaExampleTr_Txt td {
+    padding: 15px 15px 15px 20px;
+    border-radius: 15px;
+    background-color: rgba(220, 220, 220, 0.7);
+}
+/* 보기문 기교 [명령어: /단락~/.단락] [p: 단락] */
+table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_p {
+    text-indent: 21px;
+}
+/* 보기문 기교 [명령어: /좌들~/.좌들] [p: 좌들] */
+table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_pleft {
+    padding-left: 20px;
+    text-indent: -20px;
+}
+/* 보기문 기교 [명령어: /바~/.바] [bar: -] */
+table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_bar {
+    padding-left: 15px;
+    text-indent: -18px;
+}
+/* 보기문 기교 [명령어: /한글~/.한글] [kor: 가, 나, 다, 라] */
+table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_kor {
+    padding-left: 33px;
+    text-indent: -35px;
+}
+/* 보기문 기교 [명령어: /한글괄호~/.한글괄호] [kor_bra: (가),(나),(다),(라)] */
+table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_kor_bra {
+    padding-left: 42px;
+    text-indent: -42px;
+}
+/* 보기문 기교 [명령어: /자음괄호~/.자음괄호] [kor_con_bra: (ㄱ), (ㄴ), (ㄷ), (ㄹ)] */
+table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_kor_con_bra {
+    padding-left: 35px;
+    text-indent: -35px;
+}
+/* 보기문 기교 [명령어: /영소~/.영소] [eng: a, b, c, d] */
+table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_eng {
+    padding-left: 28px;
+    text-indent: -28px;
+}
+/* 보기문 기교 [명령어: /영대괄호~/.영대괄호] [eng_big_bra: (A), (B), (C), (D)] */
+table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_eng_big_bra {
+    padding-left: 36px;
+    text-indent: -36px;
+}
+/* 보기문 기교 [명령어: /영소괄호~/.영소괄호] [eng_small_bra: (a),(b),(c),(d)] */
+table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_eng_small_bra {
+    padding-left: 34px;
+    text-indent: -34px;
+}
+/* 보기문 기교 [명령어: /서클~/.서클] [circle: ⓐ, ⓑ, ⓒ] */
+table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleList_circle {
+    padding-left: 28px;
+    text-indent: -28px;
+}
+/* 보기문 기교 [명령어: /우측~/.우측] [정렬: 우측 */
+table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleAlign_right {
+    text-align: right;
+}
+/* 보기문 기교 [명령어: /중앙~/.중앙] [정렬: 중앙] */
+table.allaBasicTbl tr.allaExampleTr_Txt td div.allaExampleAlign_center {
+    text-align: center;
+}
+/* 보기그림 라인 */
+table.allaBasicTbl tr.allaExampleTr_Img td:last-of-type {
+    padding: 0px 16px;
+    border-radius: 15px;
+    background-color: rgba(220, 220, 220, 0);
+    text-align: center;
+    line-height: 0px;
+}
+/* 보기그림 내 그림 */
+table.allaBasicTbl tr.allaExampleTr_Img td:last-of-type img {
+    width: 100%;
+}
+
+
+/* 객관식 영역 */
+/* 라디오 */
+.allaAnswerRadio {
+            margin-top: -5px;
+    margin-right: 6px;
+            margin-left: 9px;
+    width: 18px;
+    height: 18px;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 2px solid #0078d6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+}
+.allaAnswerRadio[type="radio"] {
+    border-radius: 50%;
+}
+.allaAnswerRadio:active {
+    filter: brightness(90%);
+}
+.allaAnswerRadio:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.allaAnswerRadio:checked {
+    background-color: #0078d6;
+    border-color: #0078d6;
+}
+.allaAnswerRadio:checked[type="radio"] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+.allaAnswerRadio:disabled {
+    pointer-events: none;
+    filter: none;
+    opacity: 0.5;
+}
+/* 객관식 내용 */
+tr.allaAnswerTr td.allaAnswerTd {
+    padding: 0 10px 0 48px;
+    text-indent: -40px;
+    border-radius: 15px;
+}
+/* 객관식 내용 (글자) */
+tr.allaAnswerTr td.allaAnswerTd label {
+    cursor: pointer;
+}
+/* 객관식 내용 (그림) */
+tr.allaAnswerTr td.allaAnswerTd label img {
+    cursor: pointer;
+    margin: 10px auto;
+}
+/* 객관식 내용 (그림) 클릭이벤트 제거 */
+tr.allaAnswerTr td.allaAnswerTd label figure {
+    pointer-events: none;
+}
+/* 객관식 내용 (그림) 클릭이벤트 제거 - 이미지 삽입 후 기본치환자에서 뒷쪽치환자 날린 것 */
+tr.allaAnswerTr td.allaAnswerTd label span {
+    pointer-events: none;
+}
+/* 객관식 내용 : 모름 */
+tr.allaAnswerTr:nth-last-of-type(2) td.allaAnswerTd {
+    color: rgba(0, 0, 0, 0.3)
+}
+/* 개별 문제 체점 버튼 라인 */
+tr.allaCheckTr:last-of-type td {
+    text-align: right;
+    padding-top: 10px;
+}
+/* 개별 문제 채점 버튼 */
+tr.allaCheckTr:last-of-type td button {
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    background-color: #0078d6;
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    /* display: none; */
+    border-radius: 15px;
+}
+
+/* 채점 버튼 영역 */
+/* 채점 버튼 타이틀 */
+.allaCheckTbl label {
+    font-size: 14px;
+    margin-right: 10px;
+}
+/* 채점 버튼 : 모두 */
+.allaCheckTbl button {
+    font-size: 16px;
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+/* 채점 버튼 : 채점하기 */
+.allaCheckTbl button:first-of-type {
+    color: #fff;
+    border: none;
+    background-color: #0078d6;
+    margin-bottom: 10px;
+}
+/* 채점 버튼 : 다시풀기 */
+.allaCheckTbl button:last-of-type {
+    color: #555;
+    border: 2px solid #ddd;
+    background-color: #fff;
+}
+
+/* 정답가이드,  정답테이블 영역 */
+/* 정답 공통 전체 */
+div.allaAnswerTableDiv {
+    margin-bottom: 160px;
+}
+
+div.allaAnswerGuideDiv table,
+div.allaAnswerTableDiv table {
+    width: 100%;
+    max-width: 740px;
+    font-family: 'KoPub_Batang_Medium', 'KoPub_World_Batang_Medium', 'Noto Sans KR';
+    font-size: 1em;
+    line-height: 26px;
+    border-collapse: collapse;
+    border: 1px solid #bbbbbb;
+}
+/* 정답 공통 <th> 첫째줄 */
+div.allaAnswerGuideDiv table tr:first-child th,
+div.allaAnswerTableDiv table tr:first-child th {
+    font-weight: bold;
+    border: 1px solid #cccccc;
+    border-bottom: 3px solid #cccccc;
+    background-color: #ffffff;
+    padding: 5px 0;
+}
+/* 정답 공통 <th> */
+div.allaAnswerGuideDiv table tr th,
+div.allaAnswerGuideDiv table tr td,
+div.allaAnswerTableDiv table tr th,
+div.allaAnswerTableDiv table tr td {
+    border: 1px solid #cccccc;
+    padding: 10px 0;
+}
+/* 정답 공통 <td> */
+div.allaAnswerGuideDiv table tr td,
+div.allaAnswerTableDiv table tr td {
+    text-align: center;
+    border: 1px solid #cccccc;
+}
+/* 정답가이드 <td> 답안유형 */
+div.allaAnswerGuideDiv table tr td:nth-of-type(1),
+div.allaAnswerGuideDiv table tr td:nth-of-type(3),
+div.allaAnswerGuideDiv table tr td:nth-of-type(5) {
+    color: #0078d6;
+    font-weight: bold;
+}
+/* 정답테이블 <td> 문제번호 */
+div.allaAnswerTableDiv table tr td:first-of-type {
+    color: #0078d6;
+    font-weight: bold;
+}
+/* 정답 공통 <td> 홀수 */
+div.allaAnswerGuideDiv table tr:nth-child(even) td,
+div.allaAnswerTableDiv table tr:nth-child(even) td {
+    background-color: #eeeeee;
+}
+/* 정답 공통 <td> 짝수 */
+div.allaAnswerGuideDiv table tr:nth-child(odd) td,
+div.allaAnswerTableDiv table tr:nth-child(odd) td {
+    background-color: #ffffff;
+}
+/* 정답테이블 채점결과 이미지 <td> */
+div.allaAnswerTableDiv table tr td:nth-child(4) {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* 정답테이블 채점결과 이미지 <img> */
+div.allaAnswerTableDiv table tr td:nth-child(4) img {
+    width: 22px;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* 정답테이블 바로가기 이미지 <td> */
+div.allaAnswerTableDiv table tr td:last-child {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* 정답테이블 바로가기 이미지 <img> */
+div.allaAnswerTableDiv table tr td:last-child img {
+    width: 22px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* 타년도 기출문제 바로가기 */
+div.allaOtherExamDiv{
+    width: 100%;
+    max-width: 740px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    text-align: left;
+    margin-bottom: 160px;
+    color: #343a40;
+    box-sizing: border-box;
+}
+
+div.allaOtherExamDiv a {
+    text-decoration: none;
+}
+
+div.allaOtherExamDiv div:first-of-type {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 0 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div.allaOtherExamDiv div:first-of-type span.allaOtherTitle {
+    font-size: 20px;
+    font-weight: border;
+}
+
+div.allaOtherExamDiv div:last-of-type {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #9092A2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* 기타 */
+/* 폰트 밑줄 */
+span.iunder{text-decoration: underline;}
+
+    /* 폰트 윗줄 */
+span.iover{text-decoration: overline;}
+
+/* 폰트 굵게 */
+span.ibold{font-weight: bold;}
+
+/* 폰트 밑줄+굵게 */
+span.iub{text-decoration: underline;font-weight: bold;}
+
+    /* 폰트 미지수 */
+    span.imath{font-family: 'KaTex_Math_Italic';}
+
+
+
+/* 
+--------------------------------------------
+종  료 : alla-class-post-common-5.0.2.css   
+--------------------------------------------
+*/
