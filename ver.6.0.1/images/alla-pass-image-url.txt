@@ -1,0 +1,34 @@
+[AllA PASS] Image URL
+
+# answer-none.png
+https://tistory2.daumcdn.net/tistory/5156907/skin/images/answer-none.png
+
+# answer-o.png
+https://tistory3.daumcdn.net/tistory/5156907/skin/images/answer-o.png
+
+# answer-shortcut.png
+https://tistory4.daumcdn.net/tistory/5156907/skin/images/answer-shortcut.png
+
+# answer-t.png
+https://tistory1.daumcdn.net/tistory/5156907/skin/images/answer-t.png
+
+# answer-x.png
+https://tistory3.daumcdn.net/tistory/5156907/skin/images/answer-x.png
+
+# check-O.png
+https://tistory3.daumcdn.net/tistory/5156907/skin/images/check-O.png
+
+# check-S.png
+https://tistory4.daumcdn.net/tistory/5156907/skin/images/check-S.png
+
+# check-T.png
+https://tistory4.daumcdn.net/tistory/5156907/skin/images/check-T.png
+
+# check-V.png
+https://tistory2.daumcdn.net/tistory/5156907/skin/images/check-V.png
+
+# check-X.png
+https://tistory4.daumcdn.net/tistory/5156907/skin/images/check-X.png
+
+# guide.gif
+https://tistory4.daumcdn.net/tistory/5156907/skin/images/Blog_Guide_Web.gif
