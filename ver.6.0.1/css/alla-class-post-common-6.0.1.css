@@ -321,7 +321,7 @@ tr.allaCheckTr td button {
     height: 40px;
     cursor: pointer;
     margin-bottom: 10px;
-    /* display: none; */
+    display: none;
     border-radius: 15px;
 }
 
@@ -403,13 +403,10 @@ div.allaAnswerTableDiv table tr td {
     border: 1px solid #cccccc;
 }
 /* 정답가이드 <td> 답안유형 */
+/* 정답테이블 <td> 문제번호 */
 div.allaAnswerGuideDiv table tr td:nth-of-type(1),
 div.allaAnswerGuideDiv table tr td:nth-of-type(3),
-div.allaAnswerGuideDiv table tr td:nth-of-type(5) {
-    color: #0078d6;
-    font-weight: bold;
-}
-/* 정답테이블 <td> 문제번호 */
+div.allaAnswerGuideDiv table tr td:nth-of-type(5),
 div.allaAnswerTableDiv table tr td:first-of-type {
     color: #0078d6;
     font-weight: bold;
@@ -423,34 +420,6 @@ div.allaAnswerTableDiv table tr:nth-child(even) td {
 div.allaAnswerGuideDiv table tr:nth-child(odd) td,
 div.allaAnswerTableDiv table tr:nth-child(odd) td {
     background-color: #ffffff;
-}
-/* 정답테이블 채점결과 이미지 <td> */
-div.allaAnswerTableDiv table tr td:nth-child(4) {
-    box-sizing: border-box;
-    padding: 0;
-}
-
-/* 정답테이블 채점결과 이미지 <img> */
-div.allaAnswerTableDiv table tr td:nth-child(4) img {
-    width: 22px;
-    margin: 0 auto;
-    display: table-cell;
-    vertical-align: middle;
-}
-
-/* 정답테이블 바로가기 이미지 <td> */
-div.allaAnswerTableDiv table tr td:last-child {
-    box-sizing: border-box;
-    padding: 0;
-}
-
-/* 정답테이블 바로가기 이미지 <img> */
-div.allaAnswerTableDiv table tr td:last-child img {
-    width: 22px;
-    cursor: pointer;
-    margin: 0 auto;
-    display: table-cell;
-    vertical-align: middle;
 }
 
 /* 타년도 기출문제 바로가기 */
