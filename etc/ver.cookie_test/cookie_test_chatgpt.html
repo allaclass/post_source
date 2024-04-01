@@ -25,9 +25,9 @@
         // 라디오 버튼 선택 값을 쿠키에 저장하는 함수
         function saveRadioSelection() {
             var selectedValue = document.querySelector('input[name="option"]:checked').value;
-            console.log(`selectedValue: ${selectedValue}`);
+            // console.log(`selectedValue: ${selectedValue}`);
             document.cookie = "selectedOption=" + selectedValue;
-            console.log(`document.cookie: ${document.cookie}`);
+            // console.log(`document.cookie: ${document.cookie}`);
         }
 
         // 쿠키에서 라디오 버튼 선택 값을 가져오는 함수
