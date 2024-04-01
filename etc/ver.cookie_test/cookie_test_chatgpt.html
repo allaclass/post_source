@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라디오 버튼 선택 유지하기</title>
+</head>
+
+<body>
+
+    <form id="radioForm">
+        <label for="radio-1">
+            <input type="radio" name="option" id="radio-1" value="1"> 옵션 1<br>
+        </label>
+        <label for="radio-2">
+            <input type="radio" name="option" id="radio-2" value="2"> 옵션 2<br>
+        </label>
+        <label for="radio-3">
+            <input type="radio" name="option" id="radio-3" value="3"> 옵션 3<br>
+        </label>
+    </form>
+
+    <script>
+        // 라디오 버튼 선택 값을 쿠키에 저장하는 함수
+        function saveRadioSelection() {
+            var selectedValue = document.querySelector('input[name="option"]:checked').value;
+            console.log(`selectedValue: ${selectedValue}`);
+            document.cookie = "selectedOption=" + selectedValue;
+            console.log(`document.cookie: ${document.cookie}`);
+        }
+
+        // 쿠키에서 라디오 버튼 선택 값을 가져오는 함수
+        function getSavedSelection() {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i].trim();
+                if (cookie.indexOf('selectedOption=') === 0) {
+                    return cookie.substring('selectedOption='.length, cookie.length);
+                }
+            }
+            return null;
+        }
+
+        // 페이지가 로드될 때 저장된 선택 값을 가져와서 라디오 버튼 선택하기
+        window.onload = function () {
+            var savedValue = getSavedSelection();
+            if (savedValue) {
+                var radio = document.querySelector('input[name="option"][value="' + savedValue + '"]');
+                if (radio) {
+                    radio.checked = true;
+                }
+            }
+        };
+
+        // 라디오 버튼 선택이 변경될 때마다 선택값 저장하기
+        document.querySelectorAll('input[name="option"]').forEach(function (radio) {
+            radio.addEventListener('change', saveRadioSelection);
+        });
+    </script>
+
+</body>
+
+</html>
