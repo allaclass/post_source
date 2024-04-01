@@ -332,6 +332,7 @@ tr.allaSolveTr td {
     padding: 15px 15px 15px 20px;
     border-radius: 15px;
     background-color: rgba(220, 220, 220, 0.7);
+    display: none;
 }
 
 /* 채점 버튼 영역 */

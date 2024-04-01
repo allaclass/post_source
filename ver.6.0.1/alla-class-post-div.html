@@ -20,15 +20,6 @@
                             <div class="entry-content">
                                 <div class="tt_article_useless_p_margin">
 
-<!-- 수정: 모바일 방지 -->
-<div>
-	<script>
-		if (window.location.pathname.split("/")[1] === "m" && navigator.userAgent.indexOf("Tistory") === -1 && navigator.userAgent.indexOf("Android") === -1) {
-		window.location.href = window.location.origin + window.location.pathname.substr(2);
-		}
-	</script>
-</div>
-<!-- /.수정: 모바일 방지 -->
 
 <!-- 썸네일 영역 -->
 <div class="allaThumbDiv">
@@ -54,7 +45,7 @@
 		<colgroup><col width="100px"><col></colgroup>
 		<tr><td colspan="3"><span class="ibold">2019</span>&nbsp;학년도&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ibold">2</span>&nbsp;학기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ibold">2</span>&nbsp;학년&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ibold">2</span>&nbsp;문항</td></tr>
 		<tr><td colspan="3">과목명</td></tr>
-		<tr><td>시험종류&nbsp;&nbsp;&nbsp;:</td><td>기말인가시험</td></tr>
+		<tr><td>시험종류&nbsp;&nbsp;&nbsp;:</td><td>기말시험</td></tr>
 		<tr><td>출제위원&nbsp;&nbsp;&nbsp;:</td><td>김현수</td></tr>
 		<tr><td>출제범위&nbsp;&nbsp;&nbsp;:</td><td>전 범위</td></tr>
 		<tr><td>정　　답&nbsp;&nbsp;&nbsp;:</td><td>12212K23A412212K23A412212K23A412212K23A412212</td></tr>
@@ -62,6 +53,31 @@
 		<tr><td>웹앱제작&nbsp;&nbsp;&nbsp;:</td><td>올에이클래스 김현수</td></tr>
 	</tbody>
 </table>
+<!-- ------------------------------------------------------------------------------------ -->
+
+<!-- 그룹 문제 -->
+<form>
+	<table class="allaBasicTbl">
+		<tbody>
+			<!-- 질의 -->
+			<tr class="allaGroupQuestionTr">
+				<td>
+					<span class="allaQuestionNo">※</span>가나다라
+				</td>
+			</tr>
+			<!-- 보기문 -->
+			<tr class="allaExampleTr_Txt">
+				<td>
+					가나다라마
+				</td>
+			</tr>
+			<tr class="allaBlankTr">
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</form>
+<!-- //그룹 문제-->
 <!-- ------------------------------------------------------------------------------------ -->
 
 <!-- 문제 : 01 -->
@@ -80,7 +96,7 @@
 					<td class="allaAnswerTd">
 						<label for="radio-01-1">
 							<input class="allaAnswerRadio" type="radio" id="radio-01-1" name="question-01" value="1">
-							가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
+							가나다라가나다라가나다라가나다라 가나다라가나다라가나다라가나다라
 						</label>
 					</td>
 				</tr>
@@ -89,7 +105,7 @@
 					<td class="allaAnswerTd">
 						<label for="radio-01-2">
 							<input class="allaAnswerRadio" type="radio" id="radio-01-2" name="question-01" value="2">
-							가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
+							가나다라가나다라가나다라가나다라 가나다라가나다라가나다라가나다라
 						</label>
 					</td>
 				</tr>
@@ -98,7 +114,7 @@
 					<td class="allaAnswerTd">
 						<label for="radio-01-3">
 							<input class="allaAnswerRadio" type="radio" id="radio-01-3" name="question-01" value="3">
-							가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
+							가나다라가나다라가나다라가나다라 가나다라가나다라가나다라가나다라
 						</label>
 					</td>
 				</tr>
@@ -107,16 +123,7 @@
 					<td class="allaAnswerTd">
 						<label for="radio-01-4">
 							<input class="allaAnswerRadio" type="radio" id="radio-01-4" name="question-01" value="4">
-							가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
-						</label>
-					</td>
-				</tr>
-				<!-- 객관식 5번 -->
-				<tr class="allaAnswerTr">
-					<td class="allaAnswerTd">
-						<label for="radio-01-5">
-							<input class="allaAnswerRadio" type="radio" id="radio-01-5" name="question-01" value="5">
-							모름
+							가나다라가나다라가나다라가나다라 가나다라가나다라가나다라가나다라
 						</label>
 					</td>
 				</tr>
@@ -124,6 +131,13 @@
 				<tr class="allaCheckTr">
 					<td>
 						<button type="button">다시채점</button>
+					</td>
+				</tr>
+				<!-- 객관식 해설 -->
+				<tr class="allaSolveTr">
+					<td>
+						해설)<br>
+						가나다라
 					</td>
 				</tr>
 			</tbody>
@@ -149,7 +163,7 @@
 					<td class="allaAnswerTd">
 						<label for="radio-02-1">
 							<input class="allaAnswerRadio" type="radio" id="radio-02-1" name="question-02" value="1">
-							가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
+							가나다라가나다라가나다라가나다라 가나다라가나다라가나다라가나다라
 						</label>
 					</td>
 				</tr>
@@ -158,7 +172,7 @@
 					<td class="allaAnswerTd">
 						<label for="radio-02-2">
 							<input class="allaAnswerRadio" type="radio" id="radio-02-2" name="question-02" value="2">
-							가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
+							가나다라가나다라가나다라가나다라 가나다라가나다라가나다라가나다라
 						</label>
 					</td>
 				</tr>
@@ -167,7 +181,7 @@
 					<td class="allaAnswerTd">
 						<label for="radio-02-3">
 							<input class="allaAnswerRadio" type="radio" id="radio-02-3" name="question-02" value="3">
-							가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
+							가나다라가나다라가나다라가나다라 가나다라가나다라가나다라가나다라
 						</label>
 					</td>
 				</tr>
@@ -176,16 +190,7 @@
 					<td class="allaAnswerTd">
 						<label for="radio-02-4">
 							<input class="allaAnswerRadio" type="radio" id="radio-02-4" name="question-02" value="4">
-							가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
-						</label>
-					</td>
-				</tr>
-				<!-- 객관식 5번 -->
-				<tr class="allaAnswerTr">
-					<td class="allaAnswerTd">
-						<label for="radio-02-5">
-							<input class="allaAnswerRadio" type="radio" id="radio-02-5" name="question-02" value="5">
-							모름
+							가나다라가나다라가나다라가나다라 가나다라가나다라가나다라가나다라
 						</label>
 					</td>
 				</tr>
@@ -208,6 +213,8 @@
 </div>
 <!-- //문제 : 02 -->
 <!-- ------------------------------------------------------------------------------------ -->
+
+
 
 <!-- 채점 버튼 영역 -->
 <form>
@@ -252,6 +259,5 @@
         
         <!-- 제이쿼리 스크립트 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="./js/alla-class-post-common-6.0.1.js"></script>
-        <script src="./js/alla-class-post-shortcut-6.0.1.js"></script>
+        <script src="./js/alla-class-post-common-6.0.1.js" type="application/javascript"></script>
     </body>
