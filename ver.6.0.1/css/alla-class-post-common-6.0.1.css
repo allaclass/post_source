@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /*
-제  목 : alla-class-post-common-5.0.2.css
+제  목 : alla-class-post-common-6.0.1.css
 작성일 : 2023.01.19
 작성자 : 김현수
 */
@@ -238,9 +238,9 @@ table.allaBasicTbl tr.allaExampleTr_Img td:last-of-type img {
 /* 객관식 영역 */
 /* 라디오 */
 .allaAnswerRadio {
-            margin-top: -5px;
+    margin-top: -5px;
     margin-right: 6px;
-            margin-left: 9px;
+    margin-left: 9px;
     width: 18px;
     height: 18px;
     vertical-align: top;
@@ -306,12 +306,13 @@ tr.allaAnswerTr:nth-last-of-type(2) td.allaAnswerTd {
     color: rgba(0, 0, 0, 0.3)
 }
 /* 개별 문제 체점 버튼 라인 */
-tr.allaCheckTr:last-of-type td {
+tr.allaCheckTr td {
     text-align: right;
     padding-top: 10px;
+    padding-right: 16px;
 }
 /* 개별 문제 채점 버튼 */
-tr.allaCheckTr:last-of-type td button {
+tr.allaCheckTr td button {
     font-size: 16px;
     color: #fff;
     border: none;
@@ -322,6 +323,15 @@ tr.allaCheckTr:last-of-type td button {
     margin-bottom: 10px;
     /* display: none; */
     border-radius: 15px;
+}
+
+/* 개별 문제 해설 영역 */
+tr.allaSolveTr td {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: 15px 15px 15px 20px;
+    border-radius: 15px;
+    background-color: rgba(220, 220, 220, 0.7);
 }
 
 /* 채점 버튼 영역 */
@@ -506,3 +516,60 @@ span.iub{text-decoration: underline;font-weight: bold;}
 종  료 : alla-class-post-common-5.0.2.css   
 --------------------------------------------
 */
+
+
+/* Web Font Load */
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:800&subset=korean');
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+/* KoPub Font Load */
+@font-face {
+	font-family: 'KoPub_Dotum_Light';
+	src: url('https://tistory3.daumcdn.net/tistory/4700529/skin/images/KoPub%20Dotum%20Light.ttf');
+}
+@font-face {
+	font-family: 'KoPub_Batang_Light';
+	src: url('https://tistory1.daumcdn.net/tistory/4700529/skin/images/KoPub%20Batang%20Light.ttf');
+}
+@font-face {
+	font-family: 'KoPub_World_Dotum_Light';
+	src: url('https://tistory4.daumcdn.net/tistory/4700529/skin/images/KoPubWorld%20Dotum%20Light.ttf');
+}
+@font-face {
+	font-family: 'KoPub_World_Batang_Light';
+	src: url('https://tistory3.daumcdn.net/tistory/4700529/skin/images/KoPubWorld%20Batang%20Light.ttf');
+}
+
+@font-face {
+	font-family: 'KoPub_Dotum_Medium';
+	src: url('https://tistory3.daumcdn.net/tistory/4700529/skin/images/KoPub%20Dotum%20Medium.ttf');
+}
+
+@font-face {
+	font-family: 'KoPub_Batang_Medium';
+	src: url('https://tistory1.daumcdn.net/tistory/4700529/skin/images/KoPub%20Batang%20Medium.ttf');
+}
+
+@font-face {
+	font-family: 'KoPub_World_Dotum_Medium';
+	src: url('https://tistory2.daumcdn.net/tistory/4700529/skin/images/KoPubWorld%20Dotum%20Medium.ttf');
+}
+
+@font-face {
+	font-family: 'KoPub_World_Batang_Medium';
+	src: url('https://tistory4.daumcdn.net/tistory/4700529/skin/images/KoPubWorld%20Batang%20Medium.ttf');
+}
+
+/* KaTex_Math Font Load */
+@font-face {
+    font-family: 'KaTex_Math_Italic';
+    src: url('https://tistory4.daumcdn.net/tistory/4700529/skin/images/KaTeX_Math-Italic.ttf');
+}
+
+body {
+    font-weight: 400;
+	font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+	font-size: 1em;
+	line-height: 1.25;
+	color: #555;
+}
