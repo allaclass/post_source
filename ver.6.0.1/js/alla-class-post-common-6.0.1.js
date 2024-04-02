@@ -1,3 +1,7 @@
+// 제  목 : alla-post-common-6.0.1.js
+// 작성일 : 2024.04.02 (edit: jquery to javascript)
+// 작성자 : 김현수
+
 // [함수 정의] 유저가이드 이미지 표시
 let fnAlla6GuideDivImagesInput = () => {
     let alla6GuideDivImages = document.querySelectorAll('.alla6GuideDiv img');

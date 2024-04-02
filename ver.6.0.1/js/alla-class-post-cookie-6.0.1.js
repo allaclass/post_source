@@ -1,4 +1,21 @@
+// Old version Page Cookie Init
+function deleteCookiesAndReload() {
+    // 만약 allaGuideWrap 또는 allaGuideDiv 클래스를 가진 요소가 있다면
+    if (document.querySelector('.allaGuideWrap') || document.querySelector('.allaGuideDiv')) {
+        // 현재 스크롤 위치를 allaGuideWrap 또는 allaGuideDiv 요소의 상단으로 이동합니다.
+        var offset = document.querySelector('.allaGuideWrap') ? document.querySelector('.allaGuideWrap').offsetTop : document.querySelector('.allaGuideDiv').offsetTop;
+        window.scrollTo({ top: offset - 100, behavior: 'smooth' });
 
+        // 쿠키 삭제
+        deleteAllCookies();
+
+        // 페이지를 새로 고칩니다.
+        // location.reload();
+    }
+}
+
+// 함수 호출
+deleteCookiesAndReload();
 
 
 // Function to set cookie
@@ -44,7 +61,7 @@ function handleRadioButtonClick(event) {
 // Function to set radio button based on cookie value
 function setRadioButtonFromCookie() {
     var radioButtons = document.querySelectorAll('input[type="radio"]');
-    radioButtons.forEach(function(radioButton) {
+    radioButtons.forEach(function (radioButton) {
         var cookieValue = getCookie(radioButton.name);
         if (cookieValue === radioButton.value) {
             radioButton.checked = true;
@@ -76,7 +93,7 @@ function deleteAllCookies() {
 
     // Uncheck all radio buttons
     var radioButtons = document.querySelectorAll('input[type="radio"]');
-    radioButtons.forEach(function(radioButton) {
+    radioButtons.forEach(function (radioButton) {
         radioButton.checked = false;
     });
 }

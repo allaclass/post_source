@@ -1,8 +1,6 @@
-
-// 제  목 : alla-post-common-5.0.1.js
-// 작성일 : 2022.01.14 (table-renewal)
+// 제  목 : alla-post-common-5.0.3.js
+// 작성일 : 2024.04.02 (edit: delete cookies)
 // 작성자 : 김현수
-// URL : https://tistory1.daumcdn.net/tistory/4700529/skin/images/alla-class-post-common-5.0.1.js
 
 
 $(document).ready(function () {
