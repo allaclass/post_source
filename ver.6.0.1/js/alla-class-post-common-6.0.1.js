@@ -6,38 +6,92 @@ let fnAlla6GuideDivImagesInput = () => {
     });
 }
 
+// // [함수 정의] 객관식 답안 클릭 이벤트
+// let fnAlla6BasicTblInputsClick = () => {
+//     // 특정 클래스를 가진 테이블 내의 라디오 버튼들을 선택합니다.
+//     let alla6BasicTblInputsClick = document.querySelectorAll('table.alla6BasicTbl .alla6AnswerTr input[type="radio"]');
+//     // 각 라디오 버튼에 대해 반복합니다.
+//     alla6BasicTblInputsClick.forEach(function (input) {
+//         // 라디오 버튼에 클릭 이벤트를 추가합니다.
+//         input.addEventListener('change', function () {
+//             // 클릭된 라디오 버튼의 부모인 테이블 행(<tr>)을 선택합니다.
+//             let parentTr = this.parentElement.parentElement.parentElement;
+//             // 클릭된 행과 같은 레벨의 다른 테이블 행들을 선택합니다.
+//             let siblingsTrs = parentTr.parentElement.children;
+
+//             // 모든 형제 행들의 배경색을 초기화합니다.
+//             for (let i = 0; i < siblingsTrs.length; i++) {
+//                 // 마지막 행인 경우 배경색을 변경하지 않습니다.
+//                 if (siblingsTrs[i].classList.contains('alla6SolveTr')) {
+//                     continue;
+//                 }
+//                 if (siblingsTrs[i].classList.contains('alla6ExampleTr_Txt')) {
+//                     continue;
+//                 }
+//                 if (siblingsTrs[i].classList.contains('alla6ExampleTr_Img')) {
+//                     continue;
+//                 }
+//                 siblingsTrs[i].querySelector('td').style.backgroundColor = 'rgba(220, 220, 220, 0)';
+//             }
+//             // 클릭된 행의 배경색을 변경합니다.
+//             parentTr.querySelector('td').style.backgroundColor = 'rgba(220, 220, 220, 0.7)';
+//         });
+//     });
+// }
+
 // [함수 정의] 객관식 답안 클릭 이벤트
 let fnAlla6BasicTblInputsClick = () => {
     // 특정 클래스를 가진 테이블 내의 라디오 버튼들을 선택합니다.
     let alla6BasicTblInputsClick = document.querySelectorAll('table.alla6BasicTbl .alla6AnswerTr input[type="radio"]');
     // 각 라디오 버튼에 대해 반복합니다.
     alla6BasicTblInputsClick.forEach(function (input) {
-        // 라디오 버튼에 클릭 이벤트를 추가합니다.
-        input.addEventListener('click', function () {
-            // 클릭된 라디오 버튼의 부모인 테이블 행(<tr>)을 선택합니다.
-            let parentTr = this.parentElement.parentElement.parentElement;
-            // 클릭된 행과 같은 레벨의 다른 테이블 행들을 선택합니다.
-            let siblingsTrs = parentTr.parentElement.children;
-
-            // 모든 형제 행들의 배경색을 초기화합니다.
-            for (let i = 0; i < siblingsTrs.length; i++) {
-                // 마지막 행인 경우 배경색을 변경하지 않습니다.
-                if (siblingsTrs[i].classList.contains('alla6SolveTr')) {
-                    continue;
-                }
-                if (siblingsTrs[i].classList.contains('alla6ExampleTr_Txt')) {
-                    continue;
-                }
-                if (siblingsTrs[i].classList.contains('alla6ExampleTr_Img')) {
-                    continue;
-                }
-                siblingsTrs[i].querySelector('td').style.backgroundColor = 'rgba(220, 220, 220, 0)';
+        if (input.checked) {
+            handleRadioButtonEvent(input);
+        }
+        // 라디오 버튼에 change 이벤트를 추가합니다.
+        input.addEventListener('change', function () {
+            // 라디오 버튼이 체크되었을 때만 처리합니다.
+            if (this.checked) {
+                handleRadioButtonEvent(this);
             }
-            // 클릭된 행의 배경색을 변경합니다.
-            parentTr.querySelector('td').style.backgroundColor = 'rgba(220, 220, 220, 0.7)';
+        });
+        input.addEventListener('click', function () {
+            // 라디오 버튼이 체크되었을 때만 처리합니다.
+            if (this.checked) {
+                handleRadioButtonEvent(this);
+            }
         });
     });
 }
+
+// 라디오 버튼 클릭 또는 상태 변경 시 처리할 함수
+function handleRadioButtonEvent(radioButton) {
+    // 클릭된 라디오 버튼의 부모인 테이블 행(<tr>)을 선택합니다.
+    let parentTr = radioButton.parentElement.parentElement.parentElement;
+    // 클릭된 행과 같은 레벨의 다른 테이블 행들을 선택합니다.
+    let siblingsTrs = parentTr.parentElement.children;
+
+    // 모든 형제 행들의 배경색을 초기화합니다.
+    for (let i = 0; i < siblingsTrs.length; i++) {
+        // 마지막 행인 경우 배경색을 변경하지 않습니다.
+        if (siblingsTrs[i].classList.contains('alla6SolveTr')) {
+            continue;
+        }
+        if (siblingsTrs[i].classList.contains('alla6ExampleTr_Txt')) {
+            continue;
+        }
+        if (siblingsTrs[i].classList.contains('alla6ExampleTr_Img')) {
+            continue;
+        }
+        siblingsTrs[i].querySelector('td').style.backgroundColor = 'rgba(220, 220, 220, 0)';
+    }
+    // 클릭된 행의 배경색을 변경합니다.
+    parentTr.querySelector('td').style.backgroundColor = 'rgba(220, 220, 220, 0.7)';
+}
+
+// 객관식 답안 클릭 이벤트를 호출합니다.
+// fnAlla6BasicTblInputsClick();
+
 
 // [함수 정의] 유효 문제 번호 수집 및 배열 할당 = ['01', '02', ...]
 let fnCollectQuestionNo = () => {
@@ -262,9 +316,20 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('objSelectedAnswers(onload): ', objSelectedAnswers);
     // - 각 라디오 버튼 요소에 대해 변경 이벤트 리스너를 설정
     alla6BasicTblInputs.forEach(function (input) {
+        if (input.checked) {
+            objSelectedAnswers = fnSelectedAnswers(input, objSelectedAnswers);
+        }
         input.addEventListener('change', function () {
             // 라디오 버튼이 클릭되면 선택된 답안을 처리하고 결과를 objSelectedAnswers에 할당
-            objSelectedAnswers = fnSelectedAnswers(this, objSelectedAnswers);
+            if (this.checked) {
+                objSelectedAnswers = fnSelectedAnswers(this, objSelectedAnswers);
+            }
+        });
+        input.addEventListener('click', function () {
+            // 라디오 버튼이 체크되었을 때만 처리합니다.
+            if (this.checked) {
+                objSelectedAnswers = fnSelectedAnswers(this, objSelectedAnswers);
+            }
         });
     });
 
