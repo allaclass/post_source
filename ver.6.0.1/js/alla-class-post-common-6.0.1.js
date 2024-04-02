@@ -6,39 +6,6 @@ let fnAlla6GuideDivImagesInput = () => {
     });
 }
 
-// // [함수 정의] 객관식 답안 클릭 이벤트
-// let fnAlla6BasicTblInputsClick = () => {
-//     // 특정 클래스를 가진 테이블 내의 라디오 버튼들을 선택합니다.
-//     let alla6BasicTblInputsClick = document.querySelectorAll('table.alla6BasicTbl .alla6AnswerTr input[type="radio"]');
-//     // 각 라디오 버튼에 대해 반복합니다.
-//     alla6BasicTblInputsClick.forEach(function (input) {
-//         // 라디오 버튼에 클릭 이벤트를 추가합니다.
-//         input.addEventListener('change', function () {
-//             // 클릭된 라디오 버튼의 부모인 테이블 행(<tr>)을 선택합니다.
-//             let parentTr = this.parentElement.parentElement.parentElement;
-//             // 클릭된 행과 같은 레벨의 다른 테이블 행들을 선택합니다.
-//             let siblingsTrs = parentTr.parentElement.children;
-
-//             // 모든 형제 행들의 배경색을 초기화합니다.
-//             for (let i = 0; i < siblingsTrs.length; i++) {
-//                 // 마지막 행인 경우 배경색을 변경하지 않습니다.
-//                 if (siblingsTrs[i].classList.contains('alla6SolveTr')) {
-//                     continue;
-//                 }
-//                 if (siblingsTrs[i].classList.contains('alla6ExampleTr_Txt')) {
-//                     continue;
-//                 }
-//                 if (siblingsTrs[i].classList.contains('alla6ExampleTr_Img')) {
-//                     continue;
-//                 }
-//                 siblingsTrs[i].querySelector('td').style.backgroundColor = 'rgba(220, 220, 220, 0)';
-//             }
-//             // 클릭된 행의 배경색을 변경합니다.
-//             parentTr.querySelector('td').style.backgroundColor = 'rgba(220, 220, 220, 0.7)';
-//         });
-//     });
-// }
-
 // [함수 정의] 객관식 답안 클릭 이벤트
 let fnAlla6BasicTblInputsClick = () => {
     // 특정 클래스를 가진 테이블 내의 라디오 버튼들을 선택합니다.
@@ -212,8 +179,6 @@ let fnCheckAnswers = (objQuestionAnswers, objSelectedAnswers) => {
     let arrCollectQuestionNo = fnCollectQuestionNo();
     // - 빈선택지 객체에 담기
     for (let i=0; i < arrCollectQuestionNo.length; i++) {
-        // objCheckedResult[arrCollectQuestionNo[i]] = 'N'; // 객체에 문제번호:'N' 셋팅
-        // console.log('objCheckedResult(onload): ', objCheckedResult)
         let questionNo = arrCollectQuestionNo[i];
         let checkResult;
         let qa = objQuestionAnswers[questionNo];
@@ -346,9 +311,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 전체 채점 버튼
     // - 버튼 요소 가져옴
-    let allCheckButton = document.querySelectorAll('.alla6CheckTbl td button')[0];
+    let alla6CheckButton = document.querySelectorAll('.alla6CheckTbl td button')[0];
     // - 버튼 클릭 이벤트 리스너 등록
-    allCheckButton.addEventListener('click', function () {
+    alla6CheckButton.addEventListener('click', function () {
         // - 채점하기
         fnCheckAnswers(objQuestionAnswers, objSelectedAnswers);
         // - 다시채점 버튼 활성화
@@ -369,6 +334,22 @@ document.addEventListener('DOMContentLoaded', function () {
         bodyTop.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
 
+    // 다시 풀기 버튼
+    // - 버튼 요소 가져옴
+    let alla6ResetButton = document.querySelectorAll('.alla6CheckTbl td button')[1];
+    // - 버튼 클릭 이벤트 리스너 등록
+    alla6ResetButton.addEventListener('click', function () {
+        var confirmMsg = confirm('현재 문제집의 풀이 정보가 모두 사라집니다.\n정말로 삭제하시겠습니까?');
+        if (confirmMsg) {
+            // - 쿠키 삭제
+            deleteAllCookies();
+            // - 바디 최상단 영역으로 스크롤업
+            let bodyTop = document.querySelector('html');
+            bodyTop.scrollIntoView({ behavior: 'auto', block: 'start' });
+            // 스크롤이 완료되면 페이지를 새로고침합니다.
+            location.reload();
+        }
+    });
 });
 
 
