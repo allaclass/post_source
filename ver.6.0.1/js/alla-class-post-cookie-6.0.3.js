@@ -53,7 +53,7 @@ function getCookie(name) {
 function handleRadioButtonClick(event) {
   var radioButton = event.target;
   if (radioButton.type === 'radio' && radioButton.checked) {
-    setCookie(radioButton.name, radioButton.value, 365); // Store value in cookie for 365 days
+    setCookie(radioButton.name, radioButton.value, 30); // Store value in cookie for 365 days
   }
 }
 

@@ -1,3 +1,12 @@
+var tableTitle = document.querySelector('table.allaTitleTbl');
+if (tableTitle) {
+  var divAdTitle = document.createElement('div');
+  divAdTitle.id = 'adTitle';
+  divAdTitle.innerHTML = '<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3055418534570705" data-ad-slot="2753766557" data-ad-format="auto" data-full-width-responsive="true"></ins>';
+  tableTitle.appendChild(divAdTitle);
+  (adsbygoogle = window.adsbygoogle || []).push({});
+}
+
 var table10 = document.querySelector('table#allaBasicTbl10');
 if (table10) {
   var divAd10 = document.createElement('div');
