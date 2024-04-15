@@ -518,40 +518,8 @@ span.imath {
 
 /* KoPub Font Load */
 @font-face {
-  font-family: 'KoPub_Dotum_Light';
-  src: url('https://tistory3.daumcdn.net/tistory/4700529/skin/images/KoPub%20Dotum%20Light.ttf');
-}
-@font-face {
-  font-family: 'KoPub_Batang_Light';
-  src: url('https://tistory1.daumcdn.net/tistory/4700529/skin/images/KoPub%20Batang%20Light.ttf');
-}
-@font-face {
-  font-family: 'KoPub_World_Dotum_Light';
-  src: url('https://tistory4.daumcdn.net/tistory/4700529/skin/images/KoPubWorld%20Dotum%20Light.ttf');
-}
-@font-face {
-  font-family: 'KoPub_World_Batang_Light';
-  src: url('https://tistory3.daumcdn.net/tistory/4700529/skin/images/KoPubWorld%20Batang%20Light.ttf');
-}
-
-@font-face {
-  font-family: 'KoPub_Dotum_Medium';
-  src: url('https://tistory3.daumcdn.net/tistory/4700529/skin/images/KoPub%20Dotum%20Medium.ttf');
-}
-
-@font-face {
   font-family: 'KoPub_Batang_Medium';
   src: url('https://tistory1.daumcdn.net/tistory/4700529/skin/images/KoPub%20Batang%20Medium.ttf');
-}
-
-@font-face {
-  font-family: 'KoPub_World_Dotum_Medium';
-  src: url('https://tistory2.daumcdn.net/tistory/4700529/skin/images/KoPubWorld%20Dotum%20Medium.ttf');
-}
-
-@font-face {
-  font-family: 'KoPub_World_Batang_Medium';
-  src: url('https://tistory4.daumcdn.net/tistory/4700529/skin/images/KoPubWorld%20Batang%20Medium.ttf');
 }
 
 /* KaTex_Math Font Load */
@@ -562,7 +530,7 @@ span.imath {
 
 body {
   font-weight: 400;
-  font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+  font-family: 'KoPub_Batang_Medium', 'Noto Sans KR', sans-serif;
   font-size: 1em;
   line-height: 1.25;
   color: #555;
