@@ -520,7 +520,7 @@ span.imath {
 
 @font-face {
   font-family: 'KoPub_World_Batang_Medium';
-  src: url('https://tistory1.daumcdn.net/tistory/4700529/skin/images/KoPubWorld%20Batang_Pro%20Medium.woff2') format('woff2'), url('https://tistory1.daumcdn.net/tistory/4700529/skin/images/KoPubWorld%20Batang_Pro%20Medium.woff') format('woff');
+  src: url('https://tistory1.daumcdn.net/tistory/4700529/skin/images/KoPubWorld%20Batang_Pro%20Medium.otf');
 }
 
 /* KaTex_Math Font Load */
