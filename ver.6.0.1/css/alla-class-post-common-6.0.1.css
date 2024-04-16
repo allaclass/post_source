@@ -27,7 +27,7 @@ div.alla6NoticeFooterDiv {
 table.alla6BasicTbl {
   width: 100%;
   max-width: 740px;
-  font-family: 'KoPub_Batang_Medium', 'KoPub_World_Batang_Medium', 'Noto Sans KR';
+  font-family: 'KoPub_World_Batang_Medium', 'Noto Sans KR', sans-serif;
   font-size: 1.4em;
   color: #333;
   line-height: 40px;
@@ -38,7 +38,7 @@ table.alla6BasicTbl {
 table.alla6CheckTbl {
   width: 100%;
   max-width: 740px;
-  font-family: 'KoPub_Batang_Medium', 'KoPub_World_Batang_Medium', 'Noto Sans KR';
+  font-family: 'KoPub_World_Batang_Medium', 'Noto Sans KR', sans-serif;
   font-size: 1.4em;
   color: #333;
   line-height: 40px;
@@ -80,7 +80,7 @@ div.alla6GuideDiv img {
 table.alla6TitleTbl {
   width: 100%;
   max-width: 740px;
-  font-family: 'KoPub_Batang_Medium', 'KoPub_World_Batang_Medium', 'Noto Sans KR';
+  font-family: 'KoPub_World_Batang_Medium', 'Noto Sans KR', sans-serif;
   font-size: 1em;
   color: #333;
   line-height: 40px;
@@ -388,7 +388,7 @@ div.allaAnswerGuideDiv table,
 div.alla6AnswerTableDiv table {
   width: 100%;
   max-width: 740px;
-  font-family: 'KoPub_Batang_Medium', 'KoPub_World_Batang_Medium', 'Noto Sans KR';
+  font-family: 'KoPub_World_Batang_Medium', 'Noto Sans KR', sans-serif;
   font-size: 1em;
   line-height: 26px;
   border-collapse: collapse;
@@ -530,7 +530,7 @@ span.imath {
 
 body {
   font-weight: 400;
-  font-family: 'KoPub_Batang_Medium', 'Noto Sans KR', sans-serif;
+  font-family: 'KoPub_World_Batang_Medium', 'Noto Sans KR', sans-serif;
   font-size: 1em;
   line-height: 1.25;
   color: #555;
