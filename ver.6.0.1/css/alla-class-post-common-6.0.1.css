@@ -27,7 +27,7 @@ div.alla6NoticeFooterDiv {
 table.alla6BasicTbl {
   width: 100%;
   max-width: 740px;
-  font-family: 'KoPub_World_Batang_Medium', 'Noto Sans KR', sans-serif;
+  font-family: 'KoPubWorld Batang Light', 'Noto Sans KR', sans-serif;
   font-size: 1.4em;
   color: #333;
   line-height: 40px;
@@ -38,7 +38,7 @@ table.alla6BasicTbl {
 table.alla6CheckTbl {
   width: 100%;
   max-width: 740px;
-  font-family: 'KoPub_World_Batang_Medium', 'Noto Sans KR', sans-serif;
+  font-family: 'KoPubWorld Batang Light', 'Noto Sans KR', sans-serif;
   font-size: 1.4em;
   color: #333;
   line-height: 40px;
@@ -80,7 +80,7 @@ div.alla6GuideDiv img {
 table.alla6TitleTbl {
   width: 100%;
   max-width: 740px;
-  font-family: 'KoPub_World_Batang_Medium', 'Noto Sans KR', sans-serif;
+  font-family: 'KoPubWorld Batang Light', 'Noto Sans KR', sans-serif;
   font-size: 1em;
   color: #333;
   line-height: 40px;
@@ -150,9 +150,15 @@ table.alla6BasicTbl tr.alla6QuestionTr span.alla6QuestionNo {
   padding-right: 10px;
 }
 
+/* 그룹 문제 내용 */
+table.alla6BasicTbl tr.alla6GroupQuestionTr td:last-of-type {
+  font-family: 'KoPubWorld Dotum Medium', 'Noto Sans KR', sans-serif;
+}
+
 /* 메인 문제 내용 */
 table.alla6BasicTbl tr.alla6QuestionTr td:last-of-type {
   padding-bottom: 10px;
+  font-family: 'KoPubWorld Dotum Medium', 'Noto Sans KR', sans-serif;
 }
 
 /* 보기문 영역 */
@@ -388,7 +394,7 @@ div.allaAnswerGuideDiv table,
 div.alla6AnswerTableDiv table {
   width: 100%;
   max-width: 740px;
-  font-family: 'KoPub_World_Batang_Medium', 'Noto Sans KR', sans-serif;
+  font-family: 'KoPubWorld Batang Light', 'Noto Sans KR', sans-serif;
   font-size: 1em;
   line-height: 26px;
   border-collapse: collapse;
@@ -512,26 +518,8 @@ span.imath {
 --------------------------------------------
 */
 
-/* Web Font Load */
-@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:800&subset=korean');
-@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
-
-/* KoPub Font Load */
-
-@font-face {
-  font-family: 'KoPub_World_Batang_Medium';
-  src: url('https://tistory1.daumcdn.net/tistory/4700529/skin/images/KoPubWorld%20Batang_Pro%20Medium.otf');
-}
-
-/* KaTex_Math Font Load */
-@font-face {
-  font-family: 'KaTex_Math_Italic';
-  src: url('https://tistory4.daumcdn.net/tistory/4700529/skin/images/KaTeX_Math-Italic.ttf');
-}
-
 body {
   font-weight: 400;
-  font-family: 'KoPub_World_Batang_Medium', 'Noto Sans KR', sans-serif;
   font-size: 1em;
   line-height: 1.25;
   color: #555;

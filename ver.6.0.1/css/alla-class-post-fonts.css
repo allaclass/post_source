@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*
+제  목 : alla-class-post-fonts.css
+작성일 : 2024.04.18
+작성자 : 김현수
+*/
+
+/* Web Font Load */
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:800&subset=korean');
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+/* KoPub Font Load */
+
+/* KaTex_Math Font Load */
+@font-face {
+  font-family: 'KaTex_Math_Italic';
+  src: url('https://tistory4.daumcdn.net/tistory/4700529/skin/images/KaTeX_Math-Italic.ttf');
+}
+
+/* KoPub Font Test */
+
+@font-face {
+  font-family: 'KoPubWorld Batang Light';
+  src: url('../fonts/KoPubWorld\ Batang_Pro\ Light.otf');
+}
+
+@font-face {
+  font-family: 'KoPubWorld Dotum Medium';
+  src: url('../fonts/KoPubWorld\ Dotum_Pro\ Medium.otf');
+}
