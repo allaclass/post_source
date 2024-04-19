@@ -27,7 +27,7 @@ div.alla6NoticeFooterDiv {
 table.alla6BasicTbl {
   width: 100%;
   max-width: 740px;
-  font-family: 'KoPubWorld Batang Light', 'Noto Sans KR', sans-serif;
+  font-family: 'KoPub_World_Batang_Light', 'Noto Sans KR', sans-serif;
   font-size: 1.4em;
   color: #333;
   line-height: 40px;
@@ -38,7 +38,7 @@ table.alla6BasicTbl {
 table.alla6CheckTbl {
   width: 100%;
   max-width: 740px;
-  font-family: 'KoPubWorld Batang Light', 'Noto Sans KR', sans-serif;
+  font-family: 'KoPub_World_Batang_Light', 'Noto Sans KR', sans-serif;
   font-size: 1.4em;
   color: #333;
   line-height: 40px;
@@ -82,7 +82,7 @@ div.alla6GuideDiv img {
 table.alla6TitleTbl {
   width: 100%;
   max-width: 740px;
-  font-family: 'KoPubWorld Batang Light', 'Noto Sans KR', sans-serif;
+  font-family: 'KoPub_World_Batang_Light', 'Noto Sans KR', sans-serif;
   font-size: 1em;
   color: #333;
   line-height: 40px;
@@ -154,13 +154,13 @@ table.alla6BasicTbl tr.alla6QuestionTr span.alla6QuestionNo {
 
 /* 그룹 문제 내용 */
 table.alla6BasicTbl tr.alla6GroupQuestionTr td:last-of-type {
-  font-family: 'KoPubWorld Dotum Medium', 'Noto Sans KR', sans-serif;
+  font-family: 'KoPub_World_Dotum_Medium', 'Noto Sans KR', sans-serif;
 }
 
 /* 메인 문제 내용 */
 table.alla6BasicTbl tr.alla6QuestionTr td:last-of-type {
   padding-bottom: 10px;
-  font-family: 'KoPubWorld Dotum Medium', 'Noto Sans KR', sans-serif;
+  font-family: 'KoPub_World_Dotum_Medium', 'Noto Sans KR', sans-serif;
 }
 
 /* 보기문 영역 */
@@ -392,7 +392,7 @@ div.allaAnswerGuideDiv table,
 div.alla6AnswerTableDiv table {
   width: 100%;
   max-width: 740px;
-  font-family: 'KoPubWorld Batang Light', 'Noto Sans KR', sans-serif;
+  font-family: 'KoPub_World_Batang_Light', 'Noto Sans KR', sans-serif;
   font-size: 1em;
   line-height: 26px;
   border-collapse: collapse;
