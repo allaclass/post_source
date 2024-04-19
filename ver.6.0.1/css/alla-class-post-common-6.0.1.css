@@ -385,7 +385,7 @@ tr.alla6SolveTr td {
 /* 정답가이드,  정답테이블 영역 */
 /* 정답 공통 전체 */
 div.alla6AnswerTableDiv {
-  margin-bottom: 160px;
+  margin-bottom: 20px;
 }
 
 div.allaAnswerGuideDiv table,
@@ -453,7 +453,7 @@ div.alla6DownloadExamDiv {
   padding: 16px;
   border: 1px solid #ccc;
   text-align: center;
-  margin-bottom: 160px;
+  margin-bottom: 60px;
   color: #343a40;
   box-sizing: border-box;
 }
