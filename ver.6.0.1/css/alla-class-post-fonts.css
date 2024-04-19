@@ -11,21 +11,18 @@
 @import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
 
 /* KoPub Font Load */
+@font-face {
+  font-family: 'KoPub_World_Dotum_Medium';
+  src: url('https://tistory1.daumcdn.net/tistory/4700529/skin/images/KoPubWorld%20Dotum_Pro%20Medium.otf');
+}
+
+@font-face {
+  font-family: 'KoPub_World_Batang_Light';
+  src: url('https://tistory1.daumcdn.net/tistory/4700529/skin/images/KoPubWorld%20Batang_Pro%20Light.otf');
+}
 
 /* KaTex_Math Font Load */
 @font-face {
   font-family: 'KaTex_Math_Italic';
   src: url('https://tistory4.daumcdn.net/tistory/4700529/skin/images/KaTeX_Math-Italic.ttf');
-}
-
-/* KoPub Font Test */
-
-@font-face {
-  font-family: 'KoPubWorld Batang Light';
-  src: url('../fonts/KoPubWorld\ Batang_Pro\ Light.otf');
-}
-
-@font-face {
-  font-family: 'KoPubWorld Dotum Medium';
-  src: url('../fonts/KoPubWorld\ Dotum_Pro\ Medium.otf');
 }

@@ -72,6 +72,8 @@ div.alla6ThumbDiv img {
 /* 가이드 영역 */
 div.alla6GuideDiv img {
   width: 100%;
+  max-width: 740px;
+  cursor: pointer;
 }
 
 /* -------------------------------------------- */
@@ -322,10 +324,6 @@ tr.alla6AnswerTr td.alla6AnswerTd label figure {
 tr.alla6AnswerTr td.alla6AnswerTd label span {
   pointer-events: none;
 }
-/* 객관식 내용 : 모름 */
-tr.alla6AnswerTr:nth-last-of-type(2) td.alla6AnswerTd {
-  color: rgba(0, 0, 0, 0.3);
-}
 /* 개별 문제 체점 버튼 라인 */
 tr.alla6CheckTr td {
   text-align: right;
@@ -443,46 +441,35 @@ div.alla6AnswerTableDiv table tr:nth-child(odd) td {
   background-color: #ffffff;
 }
 
+/* 채점, 초기화 이미지 */
 /* 타년도 기출문제 바로가기 */
 /* 다운로드 문제 바로가기 */
+div.alla6GradingDiv,
+div.alla6ResetDiv,
 div.alla6OtherExamDiv,
 div.alla6DownloadExamDiv {
   width: 100%;
   max-width: 740px;
   padding: 16px;
   border: 1px solid #ccc;
-  text-align: left;
+  text-align: center;
   margin-bottom: 160px;
   color: #343a40;
   box-sizing: border-box;
 }
 
-div.alla6OtherExamDiv a {
+div.alla6GradingDiv img,
+div.alla6ResetDiv img,
+div.alla6OtherExamDiv img,
+div.alla6DownloadExamDiv img {
+  width: 100%;
+  max-width: 708px;
+  cursor: pointer;
+}
+
+div.alla6OtherExamDiv a,
+div.alla6DownloadExamDiv a {
   text-decoration: none;
-}
-
-div.alla6OtherExamDiv div:first-of-type {
-  font-size: 18px;
-  font-weight: 600;
-  padding: 0 0 10px 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-div.alla6OtherExamDiv div:first-of-type span.allaOtherTitle {
-  font-size: 20px;
-  font-weight: border;
-}
-
-div.alla6OtherExamDiv div:last-of-type {
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #9092a2;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 /* 기타 */
