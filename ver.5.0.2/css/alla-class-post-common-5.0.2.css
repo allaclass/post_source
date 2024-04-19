@@ -27,7 +27,7 @@ div.allaNoticeFooterDiv {
 table.allaBasicTbl {
   width: 100%;
   max-width: 740px;
-  font-family: 'KoPub_Batang_Medium', 'KoPub_World_Batang_Medium', 'Noto Sans KR';
+  font-family: 'KoPub_World_Batang_Light', 'Noto Sans KR', sans-serif;
   font-size: 1.4em;
   color: #333;
   line-height: 40px;
@@ -38,7 +38,7 @@ table.allaBasicTbl {
 table.allaCheckTbl {
   width: 100%;
   max-width: 740px;
-  font-family: 'KoPub_Batang_Medium', 'KoPub_World_Batang_Medium', 'Noto Sans KR';
+  font-family: 'KoPub_World_Batang_Light', 'Noto Sans KR', sans-serif;
   font-size: 1.4em;
   color: #333;
   line-height: 40px;
@@ -82,7 +82,7 @@ div.allaGuideDiv img {
 table.allaTitleTbl {
   width: 100%;
   max-width: 740px;
-  font-family: 'KoPub_Batang_Medium', 'KoPub_World_Batang_Medium', 'Noto Sans KR';
+  font-family: 'KoPub_World_Batang_Light', 'Noto Sans KR', sans-serif;
   font-size: 1em;
   color: #333;
   line-height: 40px;
@@ -152,9 +152,15 @@ table.allaBasicTbl tr.allaQuestionTr span.allaQuestionNo {
   padding-right: 10px;
 }
 
+/* 그룹 문제 내용 */
+table.allaBasicTbl tr.allaGroupQuestionTr td:last-of-type {
+  font-family: 'KoPub_World_Dotum_Medium', 'Noto Sans KR', sans-serif;
+}
+
 /* 메인 문제 내용 */
 table.allaBasicTbl tr.allaQuestionTr td:last-of-type {
   padding-bottom: 10px;
+  font-family: 'KoPub_World_Dotum_Medium', 'Noto Sans KR', sans-serif;
 }
 
 /* 보기문 영역 */
@@ -325,7 +331,7 @@ tr.allaCheckTr:last-of-type td button {
   height: 40px;
   cursor: pointer;
   margin-bottom: 10px;
-  /* display: none; */
+  display: none;
   border-radius: 15px;
 }
 
@@ -367,7 +373,7 @@ div.allaAnswerGuideDiv table,
 div.allaAnswerTableDiv table {
   width: 100%;
   max-width: 740px;
-  font-family: 'KoPub_Batang_Medium', 'KoPub_World_Batang_Medium', 'Noto Sans KR';
+  font-family: 'KoPub_World_Batang_Light', 'Noto Sans KR', sans-serif;
   font-size: 1em;
   line-height: 26px;
   border-collapse: collapse;
