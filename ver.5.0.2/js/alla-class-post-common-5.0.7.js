@@ -7,7 +7,7 @@ $(document).ready(function () {
   // $('.allaGuideDiv img').attr('src', 'https://tistory2.daumcdn.net/tistory/4700529/skin/images/Blog_Guide_Web.gif');
   $('.allaGuideDiv img').attr('src', 'https://blog.kakaocdn.net/dn/WAQ7S/btsGJPRdaAa/zQNUUsKTGAL3xgIdl3QJr0/img.gif');
 
-  // 이미지를 클릭했을 때 새 창에서 네이버를 열도록 이벤트 처리
+  // 이미지를 클릭했을 때 새 창에서 가이드를 열도록 이벤트 처리
   $('.allaGuideDiv img').click(function () {
     window.open('https://allaclass.tistory.com/3199', '_blank');
   });
@@ -363,7 +363,7 @@ $(document).ready(function () {
 
   // Other Exam Div (타년도)
   // 타년도 이미지 표시 / 240419 - 추가
-  $('.allaOtherExamDiv').append('<img src="https://tistory1.daumcdn.net/tistory/4700529/skin/images/02-Blog_OtherExam_Web.jpg" alt="Other Exams">');
+  $('.allaOtherExamDiv').append('<img src="https://tistory1.daumcdn.net/tistory/4700529/skin/images/Blog_OtherExam_Web.jpg" alt="Other Exams">');
 
   // 이미지 클릭 시, 해당과목 기말시험 태그로 이동
   var examTitle = $('table.allaTitleTbl tr:nth-of-type(2) td').html();
