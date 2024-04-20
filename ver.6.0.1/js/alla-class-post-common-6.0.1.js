@@ -211,12 +211,15 @@ let fnCheckAnswerRequestQuestion = (questionNo, objQuestionAnswers, objSelectedA
 
 // [함수 정의] 유저가이드 이미지 표시
 let fnAlla6GuideDivImagesInput = () => {
-  let alla6GuideDivImages = document.querySelectorAll('.alla6GuideDiv img');
-  alla6GuideDivImages.forEach(function (img) {
-    img.setAttribute('src', 'https://blog.kakaocdn.net/dn/WAQ7S/btsGJPRdaAa/zQNUUsKTGAL3xgIdl3QJr0/img.gif');
-    img.addEventListener('click', function () {
-      window.open('https://allaclass.tistory.com/3199', '_blank');
-    });
+  let divElement = document.querySelector('.alla6GuideDiv');
+  let imgElement = document.createElement('img');
+  imgElement.src = 'https://blog.kakaocdn.net/dn/WAQ7S/btsGJPRdaAa/zQNUUsKTGAL3xgIdl3QJr0/img.gif';
+  imgElement.alt = '올에이클래스 이용안내 이미지입니다.';
+  divElement.appendChild(imgElement);
+
+  imgElement.addEventListener('click', function () {
+    window.location.href = 'https://allaclass.tistory.com/3199'; // 현재창
+    // window.open('https://allaclass.tistory.com/3199', '_blank'); // 새창
   });
 };
 
