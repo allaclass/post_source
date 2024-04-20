@@ -6,7 +6,7 @@
 let fnCheckRedPen = (questionNo, checkResult) => {
   let tableId = 'alla6BasicTbl' + questionNo;
   let tableAddr = document.getElementById(tableId);
-  console.log('checkResult: ', checkResult);
+  // console.log('checkResult: ', checkResult);
   if (tableAddr) {
     switch (checkResult) {
       case 'O':
@@ -114,7 +114,7 @@ let fnCheckAnswers = (objQuestionAnswers, objSelectedAnswers) => {
     }
   }
   // 결과 확인
-  console.log('objCheckedResult(click): ', objCheckedResult);
+  // console.log('objCheckedResult(click): ', objCheckedResult);
   return objCheckedResult;
 };
 
@@ -205,7 +205,7 @@ let fnCheckAnswerRequestQuestion = (questionNo, objQuestionAnswers, objSelectedA
     }
   }
   // 결과 확인
-  console.log('objCheckedResult(click): ', objCheckedResult);
+  // console.log('objCheckedResult(click): ', objCheckedResult);
   return objCheckedResult;
 };
 
@@ -235,14 +235,14 @@ let fnAlla6GradingExamxDivImagesInput = () => {
 
   // 문제답안 객체 생성 = { 문제번호 : 정답 }
   let objQuestionAnswers = fnQuestionAnswers();
-  console.log('questionAnswers(onload): ', objQuestionAnswers);
+  // console.log('questionAnswers(onload): ', objQuestionAnswers);
 
   // 선택답안 객체 생성 = { 문제번호 : 선택답안 }
   // - input[type="radio"]를 모두 불러옴
   let alla6BasicTblInputs = document.querySelectorAll('table.alla6BasicTbl .alla6AnswerTr input[type="radio"]');
   // - 초기에 선택된 답안이 없을 경우 'N'으로 초기셋팅
   let objSelectedAnswers = { ...fnNonSelectedAnswers() };
-  console.log('objSelectedAnswers(onload): ', objSelectedAnswers);
+  // console.log('objSelectedAnswers(onload): ', objSelectedAnswers);
   // - 각 라디오 버튼 요소에 대해 변경 이벤트 리스너를 설정
   alla6BasicTblInputs.forEach(function (input) {
     if (input.checked) {
@@ -442,7 +442,7 @@ let fnNonSelectedAnswers = () => {
   for (let i = 0; i < arrCollectQuestionNo.length; i++) {
     nonSelectedAnswers[arrCollectQuestionNo[i]] = 'N'; // 객체에 문제번호:'N' 셋팅
   }
-  console.log('nonSelectedAnswers(onload-fn): ', nonSelectedAnswers);
+  // console.log('nonSelectedAnswers(onload-fn): ', nonSelectedAnswers);
 
   // 반환
   return nonSelectedAnswers;
@@ -466,7 +466,7 @@ let fnSelectedAnswers = (item, objSelectedAnswers) => {
       objSelectedAnswers[questionNo] = answerValue;
     }
     // 결과 확인
-    console.log('objSelectedAnswers(click): ', objSelectedAnswers);
+    // console.log('objSelectedAnswers(click): ', objSelectedAnswers);
   }
 
   // 선택된 답안 객체를 리턴합니다.
@@ -503,14 +503,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // 문제답안 객체 생성 = { 문제번호 : 정답 }
   let objQuestionAnswers = fnQuestionAnswers();
-  console.log('questionAnswers(onload): ', objQuestionAnswers);
+  // console.log('questionAnswers(onload): ', objQuestionAnswers);
 
   // 선택답안 객체 생성 = { 문제번호 : 선택답안 }
   // - input[type="radio"]를 모두 불러옴
   let alla6BasicTblInputs = document.querySelectorAll('table.alla6BasicTbl .alla6AnswerTr input[type="radio"]');
   // - 초기에 선택된 답안이 없을 경우 'N'으로 초기셋팅
   let objSelectedAnswers = { ...fnNonSelectedAnswers() };
-  console.log('objSelectedAnswers(onload): ', objSelectedAnswers);
+  // console.log('objSelectedAnswers(onload): ', objSelectedAnswers);
   // - 각 라디오 버튼 요소에 대해 변경 이벤트 리스너를 설정
   alla6BasicTblInputs.forEach(function (input) {
     if (input.checked) {
