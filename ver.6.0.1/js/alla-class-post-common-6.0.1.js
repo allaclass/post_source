@@ -267,11 +267,11 @@ let fnAlla6GradingExamxDivImagesInput = () => {
     // - 채점하기
     fnCheckAnswers(objQuestionAnswers, objSelectedAnswers);
 
-    // - 전체문제 해설 영역 활성화
-    let openSolves = document.querySelectorAll('.alla6BasicTbl .alla6SolveTr td');
-    openSolves.forEach(function (solve) {
-      solve.style.display = 'block';
-    });
+    // - 전체문제 해설 영역 활성화 - 잠시 보류
+    // let openSolves = document.querySelectorAll('.alla6BasicTbl .alla6SolveTr td');
+    // openSolves.forEach(function (solve) {
+    //   solve.style.display = 'block';
+    // });
 
     // 포커스 이동
     let alla6TitleDiv = document.querySelector('.alla6TitleDiv'); // alla6TitleDiv 요소의 위치 정보 가져오기
@@ -560,11 +560,11 @@ document.addEventListener('DOMContentLoaded', function () {
       var questionNo = questionNoElement.textContent;
       // 해당 문제만 채점 요청
       fnCheckAnswerRequestQuestion(questionNo, objQuestionAnswers, objSelectedAnswers);
-      // (해당 문제만 해설 노출시키기)
+      // (해당 문제만 해설 노출시키기) - 잠시 보류
       // 버튼의 부모 요소를 찾아 해당 요소 아래에서 alla6QuestionNo 클래스를 가진 요소를 선택
-      let solveElement = this.closest('.alla6AnswerTr').parentNode.querySelector('.alla6SolveTr td');
+      // let solveElement = this.closest('.alla6AnswerTr').parentNode.querySelector('.alla6SolveTr td');
       // 해설영역 활성화
-      solveElement.style.display = 'block';
+      // solveElement.style.display = 'block';
     });
   });
 });
