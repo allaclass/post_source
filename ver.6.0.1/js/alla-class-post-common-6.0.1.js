@@ -476,16 +476,16 @@ let fnSelectedAnswers = (item, objSelectedAnswers) => {
 document.addEventListener('DOMContentLoaded', function () {
   // 포커스 이동
   // alla6GuideDiv 요소의 위치 정보 가져오기
-  let alla6GuideDiv = document.querySelector('.alla6GuideDiv');
-  if (alla6GuideDiv) {
-    let offset = alla6GuideDiv.getBoundingClientRect();
-    // 스크롤 애니메이션 적용
-    let scrollDestination = offset.top + window.scrollY - 100;
-    window.scrollTo({
-      top: scrollDestination,
-      behavior: 'smooth',
-    });
-  }
+  // let alla6GuideDiv = document.querySelector('.alla6GuideDiv');
+  // if (alla6GuideDiv) {
+  //   let offset = alla6GuideDiv.getBoundingClientRect();
+  //   // 스크롤 애니메이션 적용
+  //   let scrollDestination = offset.top + window.scrollY - 100; // 스크롤 이동
+  //   window.scrollTo({
+  //     top: scrollDestination,
+  //     behavior: 'smooth',
+  //   });
+  // }
 
   // 유저가이드 이미지 표시
   fnAlla6GuideDivImagesInput();
