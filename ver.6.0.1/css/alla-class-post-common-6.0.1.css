@@ -499,6 +499,12 @@ span.imath {
   font-family: 'KaTex_Math_Italic';
 }
 
+/* 윗첨자, 아랫첨자 폰트크기 축소 */
+sub,
+sup {
+  font-size: 0.5em;
+}
+
 /* 
 --------------------------------------------
 종  료 : alla-class-post-common-6.0.1.css   
