@@ -300,7 +300,16 @@ let fnAlla6ResetExamsDivImagesInput = () => {
     if (confirmMsg) {
       // - 쿠키 삭제
       deleteAllCookies();
-      // 스크롤이 완료되면 페이지를 새로고침합니다.
+      // 스크롤 포커스 이동
+      let alla6TitleDiv = document.querySelector('.alla6TitleDiv'); // alla6TitleDiv 요소의 위치 정보 가져오기
+      if (alla6TitleDiv) {
+        let offset = alla6TitleDiv.getBoundingClientRect();
+        let scrollDestination = offset.top + window.scrollY - 100; // 스크롤 애니메이션 적용
+        window.scrollTo({
+          top: scrollDestination,
+        });
+      }
+      // 새로고침합니다.
       location.reload();
     }
   });
