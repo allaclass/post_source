@@ -330,8 +330,16 @@ let fnAlla6OtherExamsDivImagesInput = () => {
     // 시험종류 찾기
     let examKindElement = document.querySelector('.alla6TitleDiv table.alla6TitleTbl tbody tr:nth-child(3) td:nth-child(2)');
     let examKind = examKindElement.textContent.trim();
-    // 하이퍼링크
-    window.location.href = `https://allaclass.tistory.com/tag/${examTitle}%20${examKind}`;
+    // 현재 접속한 사이트 URL 가져오기
+    let baseURL = window.location.origin + window.location.pathname;
+    // 현재 접속한 사이트 URL을 구분하여 타년도 하이퍼링크 만들기 (티스토리 or 블로그스팟)
+    if (baseURL == 'https://allaclass.tistory.com/') {
+      // 하이퍼링크
+      window.location.href = `https://allaclass.tistory.com/tag/${examTitle}%20${examKind}`;
+    } else if (baseURL == 'https://www.allaclass.com/') {
+      // 하이퍼링크
+      window.location.href = `https://www.allaclass.com/search/label${examTitle}%20${examKind}`;
+    }
   });
 };
 
