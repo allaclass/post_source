@@ -213,7 +213,8 @@ let fnCheckAnswerRequestQuestion = (questionNo, objQuestionAnswers, objSelectedA
 let fnAlla6GuideDivImagesInput = () => {
   let divElement = document.querySelector('.alla6GuideDiv');
   let imgElement = document.createElement('img');
-  imgElement.src = 'https://blog.kakaocdn.net/dn/WAQ7S/btsGJPRdaAa/zQNUUsKTGAL3xgIdl3QJr0/img.gif';
+  // imgElement.src = 'https://blog.kakaocdn.net/dn/WAQ7S/btsGJPRdaAa/zQNUUsKTGAL3xgIdl3QJr0/img.gif';
+  imgElement.src = 'https://tistory1.daumcdn.net/tistory/4700529/skin/images/01%20-%20Blog_Guide_Intro.gif';
   imgElement.alt = '올에이클래스 이용안내 이미지입니다.';
   divElement.appendChild(imgElement);
 
@@ -227,7 +228,8 @@ let fnAlla6GuideDivImagesInput = () => {
 let fnAlla6GradingExamxDivImagesInput = () => {
   var divElement = document.querySelector('.alla6GradingDiv');
   var imgElement = document.createElement('img');
-  imgElement.src = 'https://tistory1.daumcdn.net/tistory/4700529/skin/images/Blog_GradingExam_Web.jpg';
+  // imgElement.src = 'https://tistory1.daumcdn.net/tistory/4700529/skin/images/Blog_GradingExam_Web.jpg';
+  imgElement.src = 'https://tistory1.daumcdn.net/tistory/4700529/skin/images/02%20-%20Blog_GradingExam_Web.jpg';
   imgElement.alt = '채점하기 이미지';
   divElement.appendChild(imgElement);
 
@@ -290,7 +292,8 @@ let fnAlla6GradingExamxDivImagesInput = () => {
 let fnAlla6ResetExamsDivImagesInput = () => {
   let divElement = document.querySelector('.alla6ResetDiv');
   let imgElement = document.createElement('img');
-  imgElement.src = 'https://tistory1.daumcdn.net/tistory/4700529/skin/images/Blog_ResetExam_Web.jpg';
+  // imgElement.src = 'https://tistory1.daumcdn.net/tistory/4700529/skin/images/Blog_ResetExam_Web.jpg';
+  imgElement.src = 'https://tistory1.daumcdn.net/tistory/4700529/skin/images/03%20-%20Blog_ResetExam_Web.jpg';
   imgElement.alt = '초기화하기 이미지';
   divElement.appendChild(imgElement);
 
@@ -319,7 +322,8 @@ let fnAlla6ResetExamsDivImagesInput = () => {
 let fnAlla6OtherExamsDivImagesInput = () => {
   var divElement = document.querySelector('.alla6OtherExamDiv');
   var imgElement = document.createElement('img');
-  imgElement.src = 'https://tistory1.daumcdn.net/tistory/4700529/skin/images/Blog_OtherExam_Web.jpg';
+  // imgElement.src = 'https://tistory1.daumcdn.net/tistory/4700529/skin/images/Blog_OtherExam_Web.jpg';
+  imgElement.src = 'https://tistory1.daumcdn.net/tistory/4700529/skin/images/04%20-%20Blog_OtherExam_Web.jpg';
   imgElement.alt = '타년도 바로가기 이미지';
   divElement.appendChild(imgElement);
 
@@ -348,7 +352,8 @@ let fnAlla6OtherExamsDivImagesInput = () => {
 let fnAlla6DownloadExamDivImagesInput = () => {
   var divElement = document.querySelector('.alla6DownloadExamDiv');
   var imgElement = document.createElement('img');
-  imgElement.src = 'https://tistory1.daumcdn.net/tistory/4700529/skin/images/Blog_DownloadExam_Web.jpg';
+  // imgElement.src = 'https://tistory1.daumcdn.net/tistory/4700529/skin/images/Blog_DownloadExam_Web.jpg';
+  imgElement.src = 'https://tistory1.daumcdn.net/tistory/4700529/skin/images/05%20-%20Blog_DownloadExam_Web.jpg';
   imgElement.alt = '문제 다운로드 바로가기 이미지';
   imgElement.style.opacity = '0.3'; // CSS 스타일을 적용하여 이미지의 투명도를 50%로 설정
   divElement.appendChild(imgElement);
