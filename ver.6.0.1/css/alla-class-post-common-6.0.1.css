@@ -245,6 +245,11 @@ table.alla6BasicTbl tr.alla6ExampleTr_Img td:last-of-type {
 table.alla6BasicTbl tr.alla6ExampleTr_Img td:last-of-type img {
   width: 100%;
 }
+/* 보기소스 라인 */
+table.alla6BasicTbl tr.alla6ExampleTr_Src td .hljs {
+  font-weight: 800;
+  padding: 0.5em;
+}
 
 /* 객관식 영역 */
 /* 라디오 */
