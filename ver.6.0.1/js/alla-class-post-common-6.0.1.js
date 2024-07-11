@@ -496,6 +496,38 @@ let fnSelectedAnswers = (item, objSelectedAnswers) => {
   return objSelectedAnswers;
 };
 
+// [함수 정의] 좌들 + 숫자 함수
+let fnExampleList_pleft_numpx = () => {
+  // 모든 해당 클래스를 가진 div 요소 선택
+  const divElements = document.querySelectorAll('div[class*="allaExampleList_pleft_"]');
+
+  // 각 div 요소에 대해 처리
+  divElements.forEach((div) => {
+    // 클래스명에서 픽셀 값 추출
+    const pixelValue = parseInt(div.className.split('_')[2]);
+
+    // CSS 속성 적용
+    div.style.paddingLeft = `${pixelValue}px`;
+    div.style.textIndent = `-${pixelValue}px`;
+  });
+};
+
+// [함수 정의] 좌백 + 숫자 함수
+let fnExampleList_bleft_numpx = () => {
+  // 모든 해당 클래스를 가진 div 요소 선택
+  const divElements = document.querySelectorAll('div[class*="allaExampleList_bleft_"]');
+
+  // 각 div 요소에 대해 처리
+  divElements.forEach((div) => {
+    // 클래스명에서 픽셀 값 추출
+    const pixelValue = parseInt(div.className.split('_')[2]);
+
+    // CSS 속성 적용
+    div.style.paddingLeft = `${pixelValue}px`;
+    div.style.paddingRight = `10px`;
+  });
+};
+
 document.addEventListener('DOMContentLoaded', function () {
   // 포커스 이동
   // alla6GuideDiv 요소의 위치 정보 가져오기
@@ -509,6 +541,11 @@ document.addEventListener('DOMContentLoaded', function () {
   //     behavior: 'smooth',
   //   });
   // }
+
+  // 좌들 + 숫자 함수 호출
+  fnExampleList_pleft_numpx();
+  // 좌백 + 숫자 함수 호출
+  fnExampleList_bleft_numpx();
 
   // 유저가이드 이미지 표시
   fnAlla6GuideDivImagesInput();
