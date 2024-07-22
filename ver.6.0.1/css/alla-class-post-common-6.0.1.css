@@ -154,6 +154,7 @@ table.alla6BasicTbl tr.alla6QuestionTr span.alla6QuestionNo {
 
 /* 그룹 문제 내용 */
 table.alla6BasicTbl tr.alla6GroupQuestionTr td:last-of-type {
+  padding-bottom: 10px;
   font-family: 'KoPub_World_Dotum_Medium', 'Noto Sans KR', sans-serif;
 }
 
